@@ -1,0 +1,43 @@
+$folder: '../fonts'
+
+// @mixin font-face($family, $filename, $folder)
+//   @font-face
+//     font-family: $family
+//     src: url('#{$folder}/#{$filename}.eot')
+//     src: url('#{$folder}/#{$filename}.eot?#iefix') format("embedded-opentype")
+//     src: url('#{$folder}/#{$filename}.woff') format("woff")
+//     src: url('#{$folder}/#{$filename}.ttf') format("truetype")
+//     src: url('#{$folder}/#{$filename}.svg#08bb4ba465a902745fc23c83a5d9fdc2') format("svg")
+
+@mixin font-face($family, $filename, $folder)
+  @font-face
+    font-family: $family
+    src: url('#{$folder}/#{$filename}.ttf') format("truetype")
+
+
+
+@include font-face("RobotoMono-Bold", "RobotoMono-Bold", $folder)
+@include font-face("RobotoMono-BoldItalic",  "RobotoMono-BoldItalic", $folder)
+@include font-face("RobotoMono-Italic", "obotoMono-Itali", $folder)
+@include font-face("RobotoMono-Light",  "RobotoMono-Light", $folder)
+@include font-face("RobotoMono-LightItalic",  "RobotoMono-LightItalic", $folder)
+@include font-face("RobotoMono-Medium",  "RobotoMono-Medium", $folder)
+@include font-face("RobotoMono-MediumItalic",  "RobotoMono-MediumItalic", $folder)
+@include font-face("RobotoMono-Regular",  "RobotoMono-Regular", $folder)
+@include font-face("RobotoMono-Thin",  "RobotoMono-Thin", $folder)
+@include font-face("RobotoMono-ThinItalic",  "RobotoMono-ThinItalic", $folder)
+
+@include font-face("IBMPlexMono-Bold", "IBMPlexMono-Bold", $folder)
+@include font-face("IBMPlexMono-BoldItalic",  "IBMPlexMono-BoldItalic", $folder)
+@include font-face("IBMPlexMono-ExtraLight", "IBMPlexMono-ExtraLight", $folder)
+@include font-face("IBMPlexMono-ExtraLightItalic",  "IBMPlexMono-ExtraLightItalic", $folder)
+@include font-face("IBMPlexMono-Italic",  "IBMPlexMono-Italic", $folder)
+@include font-face("IBMPlexMono-Light",  "IBMPlexMono-Light", $folder)
+@include font-face("IBMPlexMono-LightItalic",  "IBMPlexMono-LightItalic", $folder)
+@include font-face("IBMPlexMono-Medium",  "IBMPlexMono-Medium", $folder)
+@include font-face("IBMPlexMono-MediumItalic",  "IBMPlexMono-MediumItalic", $folder)
+@include font-face("IBMPlexMono-Regular",  "IBMPlexMono-Regular", $folder)
+@include font-face("IBMPlexMono-SemiBold",  "IBMPlexMono-SemiBold", $folder)
+@include font-face("IBMPlexMono-SemiBoldItalic",  "IBMPlexMono-SemiBoldItalic", $folder)
+@include font-face("IBMPlexMono-Thin",  "IBMPlexMono-Thin", $folder)
+@include font-face("IBMPlexMono-ThinItalic",  "IBMPlexMono-ThinItalic", $folder)

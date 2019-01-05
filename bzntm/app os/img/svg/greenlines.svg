@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="77" height="144" viewBox="0 0 77 144">
+<defs>
+    <style>
+      .green-lines-cls-1 {
+        fill: #08ef85;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path class="green-lines-cls-1" d="M0.088,0.429H1.611V117H0.088V0.429ZM74.747,27.1H76.27V143.667H74.747V27.1ZM9.23,27.1h1.524V117H9.23V27.1Zm9.9,0h1.524V117H19.133V27.1Zm9.142,0H29.8V117H28.275V27.1Zm9.142,0h1.524V117H37.417V27.1Zm9.142,0h1.524V117H46.559V27.1Zm9.9,0h1.524V117H56.463V27.1Zm9.142,0h1.524V117H65.6V27.1Z"/>
+</svg>

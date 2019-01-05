@@ -1,0 +1,7 @@
+<svg class="bd-glitch" width="100%" height="100%"> <g class="bd-glitch__layers" style="">
+ <image width="100%" height="100%" filter="url(#blue)" xlink:href="./statue_lion.png" class="bd-glitch__layer bd-glitch__blue"></image> 
+ <image width="100%" height="100%" filter="url(#cyan)" xlink:href="./statue_lion.png" class="bd-glitch__layer bd-glitch__green"></image> 
+ <image width="100%" height="100%" filter="url(#red)" xlink:href="./statue_lion.png" class="bd-glitch__layer bd-glitch__red"></image> 
+ <image width="100%" height="100%" filter="url(#lighten)" xlink:href="./statue_lion.png" class="bd-glitch__layer bd-glitch__white"></image> 
+ <image width="100%" height="100%" filter="url(#lighten)" xlink:href="./statue_lion.png" class="bd-glitch__layer bd-glitch__white-top"></image> 
+</g> </svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="13.28" height="12.969" viewBox="0 0 13.28 12.969">
+  <defs>
+    <style>
+      .polygon-cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path class="polygon-cls-1" d="M1495.01,769.315c-5.91,2.959-8.86,3.987-8.86-4.438,0-7.712,2.95-7.4,8.86-4.438S1500.91,766.356,1495.01,769.315Z" transform="translate(-1486.16 -758.5)"/>
+</svg>

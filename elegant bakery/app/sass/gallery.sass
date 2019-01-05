@@ -1,0 +1,203 @@
+$fz14: 14px
+$fz16: 16px
+$fz18: 18px
+$c-fff: #fff
+$ffmon: 'Montserrat', sans-serif
+$ffmon-b: 'Montserrat-Bold', sans-serif
+$ffmer-b: 'Merriweather-Bold', serif
+$ffos: 'Open Sans', sans-serif
+$c-b18184: #b18184
+$c-ffd5b1: #ffd5b1
+$c-7f7f7f: #7f7f7f
+$c-ffd0a8: #ffd0a8
+$c-f67e56: #f67e56
+$fz24: 24px
+$fz48: 48px
+$fz36: 36px
+$fz30: 30px
+
+
+.gallery-title
+	color: $c-f67e56
+	font-family: $ffmer-b
+	font-size: $fz48
+	text-align: center
+	line-height: .6
+	letter-spacing: .5px
+	padding: 115px 0 80px 0
+.gallery-subtitle
+	max-width: 910px
+	margin: 0 auto 65px 
+	width: 100%
+	color: $c-7f7f7f
+	line-height: 1.8
+	letter-spacing: .2px
+	font-size: $fz16
+	text-align: center
+	font-family: $ffmon
+.gallery-btns
+	display: flex
+	margin: 0 auto 100px
+	max-width: 740px
+	width: 100%
+	flex-wrap: wrap
+.gallery-btns-item
+	border: 1px solid #d8d8d8
+	border-radius: 6px
+	color: $c-7f7f7f
+	font-size: $fz18
+	font-family: $ffmon
+	letter-spacing: .2px
+	background-color: transparent
+	outline: none
+	padding: 17px
+	min-width: 172px
+	text-align: center
+	margin: 25px 25px 0 0
+	cursor: pointer
+	transition: all .5s linear
+.gallery-btns-item.active
+	background-color: #ffd0a8
+	color: #fff
+.gallery-btns-item-moddernWedding
+	min-width: 342px
+	padding: 17px 56px
+	margin: 25px 0 0 0
+.gallery-btns-item-individual
+	min-width: 342px
+	padding: 17px 32px
+	margin: 25px 25px 0 0 
+.gallery-btns-item-groom
+	margin: 25px 0 0 0
+// .gallery-photos
+// 	display: flex
+// 	flex-wrap: wrap
+.gallery-photos-item
+	position: relative
+	cursor: pointer
+	line-height: 0
+	img
+		width: 100%
+		// height: 100%
+	&:hover
+		.gallery-photos-item-desc
+			opacity: 1
+			visibility: visible
+.gallery-photos-item-number
+	position: absolute
+	right: 80px
+	top: 60px
+	border-radius: 22px
+	background-color: #b28d8d
+	width: 100px
+	height: 45px
+	display: flex
+	align-items: center
+	justify-content: center
+	color: #fff
+	z-index: 10
+	cursor: default
+	font-family: 	$ffos
+	font-size: 	$fz18
+.gallery-photos-item-desc
+	opacity: 0
+	display: flex
+	align-items: center
+	justify-content: center
+	flex-direction: column
+	width: 100%
+	height: 100%
+	position: absolute
+	top: 0
+	left: 0
+	background-color: rgba(0, 0, 0, 0.8)
+	visibility: hidden
+	cursor: default
+	transition: all .6s linear
+.gallery-photos-item-desc-name
+	color: #fff
+	font-size: $fz30
+	font-family: $ffmer-b
+	max-width: 275px
+	width: 100%
+	margin: 0 0 10px
+	line-height: normal
+.gallery-photos-item-desc-info
+	color: #fff
+	font-size: $fz18
+	line-height: 1.6
+	font-family: $ffmon
+	letter-spacing: .2px
+	max-width: 275px
+	width: 100%
+.gallery-photos-item-desc-btn
+	font-family: $ffos
+	font-size: $fz18
+	text-align: center
+	min-width: 275px
+	padding: 16px 0
+	background-color: #f67e56
+	border-radius: 30px
+	border: none
+	color: #fff
+	margin: 25px 0 0
+	cursor: pointer
+	border: 1px solid transparent
+	transition: all .5s linear
+	&:hover
+		background-color: transparent
+		color: #ffd0a8
+		border: 1px solid #ffd0a8
+.gallery-link-bnts
+	display: flex
+	justify-content: center
+.gallery-link-bnts-prev
+	color: $c-b18184
+	font-size: $fz18
+	font-family: $ffmon
+	display: flex
+	align-items: center
+	background-color: transparent
+	border: none
+	cursor: pointer
+	margin: 0 43px 0 0
+	outline: none
+	img
+		display: inline-block
+		margin: 0 15px 0 0
+.gallery-link-bnts-items
+	display: flex
+	justify-content: space-between
+	margin: 53px 0
+.gallery-link-bnts-items-item
+	border: solid 2px #e3e3e3
+	color: #e3e3e3
+	font-family: $ffmon
+	display: flex
+	justify-content: center
+	align-items: center
+	background-color: transparent
+	border-radius: 100%
+	width: 38px
+	height: 38px
+	margin: 0 12px 0 0
+	outline: none
+	cursor: pointer
+	transition: all .5s linear
+.gallery-link-bnts-items-item.active
+	border: solid 2px #ffd0a8
+	color: #ffd0a8
+.gallery-link-bnts-next
+	color: $c-b18184
+	font-size: $fz18
+	font-family: $ffmon
+	display: flex
+	align-items: center
+	background-color: transparent
+	border: none
+	cursor: pointer
+	margin: 0 0 0 31px
+	outline: none
+	img
+		display: inline-block
+		margin: 0 0 0 15px

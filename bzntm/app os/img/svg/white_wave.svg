@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="23" height="7" viewBox="0 0 23 7">
+  <defs>
+    <style>
+      .white-wave-cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path d="M8.151,0.001 L11.597,3.505 L15.253,0.234 L18.699,3.738 L21.628,1.118 L22.999,2.511 L18.615,6.432 L15.169,2.929 L11.513,6.199 L8.067,2.696 L4.411,5.966 L0.279,1.766 L1.734,0.465 L4.494,3.272 L8.151,0.001 Z" class="white-wave-cls-1"/>
+</svg>

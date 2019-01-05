@@ -1,0 +1,206 @@
+.close-modal {
+  position: absolute;
+  right: 27px;
+  top: 100px; }
+  .close-modal svg {
+    fill: #919191;
+    width: 25px;
+    height: 25px; }
+
+.modal {
+  background: #222328;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  padding: 70px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: -10001;
+  opacity: 0;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear; }
+  .modal.thank-you-modal {
+    padding: 70px 0 0; }
+  .modal.open {
+    overflow-y: auto;
+    opacity: 1;
+    z-index: 10001; }
+  .modal-title {
+    font-family: 'RobotoMono-Bold', sans-serif;
+    font-size: 36px;
+    color: #08ef85;
+    width: 100%; }
+  .modal-pre-text {
+    font-family: 'IBMPlexMono-Medium', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    max-width: 580px;
+    margin: 30px 0; }
+  .modal-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 895px;
+    width: 100%; }
+  .modal-img.modal-img-lion {
+    background-image: url(../img/statue_lion.png);
+    width: 302px;
+    height: 383px; }
+    .modal-img.modal-img-lion:before {
+      background-image: url(../img/statue_lion.png); }
+  .modal-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .modal-form-contact {
+      max-width: 410px; }
+    .modal-form-row {
+      width: 50%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      margin: 0 0 20px; }
+      .modal-form-row span {
+        display: block;
+        width: 100%; }
+    .modal-form-input {
+      background: rgba(0, 0, 0, 0.5);
+      border-style: solid;
+      border-width: 0 0 1px 0;
+      border-color: transparent transparent #08ef85 transparent;
+      border-radius: 0;
+      margin: 5px 0 0;
+      font-size: 18px;
+      color: #fff;
+      padding: 14px 5px;
+      width: 100%;
+      outline: none; }
+      .modal-form-input-title {
+        font-family: 'IBMPlexMono-Medium', sans-serif;
+        font-size: 14px;
+        color: #fff; }
+
+.decor-cross {
+  position: absolute;
+  left: 27px;
+  bottom: 100px; }
+  .decor-cross svg,
+  .decor-cross img {
+    fill: #07e782;
+    fill-rule: evenodd;
+    height: 190px; }
+
+.get-invite-inner,
+.thank-you-modal-inner,
+.become-sponsor-inner,
+.contact-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%; }
+
+.contact-inner {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.get-invite-modal-row,
+.become-sponsor-modal-row,
+.contact-modal-row {
+  max-width: 410px;
+  width: 100%; }
+  .get-invite-modal-row:not(.contact-modal-row):nth-child(odd),
+  .become-sponsor-modal-row:not(.contact-modal-row):nth-child(odd),
+  .contact-modal-row:not(.contact-modal-row):nth-child(odd) {
+    margin: 0 10px 20px 0; }
+
+.modal-statue-thank-you-img {
+  background-image: url(../img/statue_thank-you.png);
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  height: 657px;
+  width: 392px; }
+  .modal-statue-thank-you-img:before {
+    background-image: url(../img/statue_thank-you.png); }
+
+@media all and (max-width: 1024px) {
+  .modal-content-get-invite {
+    max-width: 530px; } }
+
+@media all and (max-width: 768px) {
+  .modal {
+    padding: 70px 15px; }
+  .get-invite-modal-row:not(.contact-modal-row):nth-child(odd),
+  .get-invite-modal-row:not(.contact-modal-row):nth-child(even),
+  .become-sponsor-modal-row:not(.contact-modal-row):nth-child(odd),
+  .become-sponsor-modal-row:not(.contact-modal-row):nth-child(even),
+  .contact-modal-row:not(.contact-modal-row):nth-child(odd),
+  .contact-modal-row:not(.contact-modal-row):nth-child(even) {
+    margin: 0 auto 20px; }
+  .decor-cross {
+    left: 7px; }
+  .submit-btn {
+    margin: 0 auto; } }
+
+@media all and (max-width: 578px) {
+  .close-modal {
+    right: 15px;
+    padding: 0; }
+  .inner-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .modal-content {
+    padding: 0 15px;
+    width: 100%;
+    width: 100%; }
+  .modal-title {
+    font-size: 30px;
+    text-align: center; }
+  .modal-pre-text {
+    text-align: center; }
+  .modal-img.modal-img-lion {
+    height: 230px;
+    width: 178px;
+    margin: 0 auto; }
+  .modal-statue-thank-you-img {
+    height: 253px;
+    width: 150px;
+    background-size: contain; }
+    .modal-statue-thank-you-img:before {
+      height: 253px;
+      width: 150px;
+      background-size: contain; } }

@@ -1,0 +1,2395 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  text-decoration: none; }
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("../fonts/Montserrat-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Merriweather-Bold";
+  src: url("../fonts/Merriweather-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Merriweather-Regular";
+  src: url("../fonts/Merriweather-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../fonts/Montserrat-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("../fonts/OpenSans-Regular.ttf") format("truetype"); }
+
+.flavors {
+  padding: 60px 15px 100px 15px; }
+
+.flavors-title-sup {
+  color: #b18184;
+  font-family: "Merriweather-Bold", serif;
+  font-size: 24px;
+  display: block;
+  padding: 0 0 28px 0; }
+
+.flavors-title {
+  text-align: center;
+  color: #ffd5b1;
+  font-size: 48px;
+  font-family: "Merriweather-Bold", serif;
+  margin: 0 0 70px 0; }
+
+.flavors-desc {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: #7f7f7f;
+  max-width: 813px;
+  width: 100%;
+  font-size: 16px;
+  margin: 0 auto 115px;
+  letter-spacing: .2px;
+  line-height: 1.8; }
+
+.flavors-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.flavors-group-item {
+  max-width: 660px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 38px 0; }
+
+.flavors-group-item-img {
+  max-width: 185px;
+  margin: auto 90px auto 0; }
+  .flavors-group-item-img img {
+    max-width: 165px;
+    height: auto; }
+
+.flavors-group-item-desc {
+  max-width: 385px;
+  width: 100%; }
+
+.flavors-group-item-title {
+  color: #b18184;
+  font-size: 24px;
+  letter-spacing: .2px;
+  font-family: "Montserrat", sans-serif;
+  margin: 0 0 18px 0; }
+  .flavors-group-item-title span {
+    display: block;
+    margin: 0 0 12px 0; }
+
+.flavors-group-item-subtitle {
+  color: #7f7f7f;
+  line-height: 1.8;
+  font-size: 16px;
+  letter-spacing: .2px;
+  font-family: "Montserrat", sans-serif; }
+
+.falvors-options-title {
+  padding: 50px 0 0 0;
+  color: #ffd0a8;
+  font-size: 36px;
+  font-family: "Montserrat-Bold", sans-serif;
+  letter-spacing: .4px;
+  text-align: center;
+  margin: 0 0 60px  0; }
+
+.falvors-options-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+
+.falvors-options-wrap-img1 {
+  max-width: 95px;
+  width: 100%; }
+
+.falvors-options-wrap-img2 {
+  max-width: 255px;
+  width: 100%; }
+
+.falvors-options-wrap-desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.falvors-options-wrap-desc-item {
+  max-width: 360px;
+  margin: 0 0 35px 0;
+  color: #7f7f7f;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.falvors-options-wrap-desc-sc {
+  margin: 45px 0 auto 0; }
+
+.falvors-options-wrap-desc-item-ciecle {
+  display: inline-block;
+  margin: 7px 22px 0 0;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #b18184;
+  border-radius: 100%; }
+
+.falvors-options-wrap-desc-item-text {
+  line-height: 1.8;
+  letter-spacing: .2px;
+  max-width: 323px;
+  width: 100%; }
+
+.call-to-us {
+  max-width: 255px;
+  width: 100%;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  text-align: center;
+  letter-spacing: .2px;
+  padding: 15px 65px;
+  border-radius: 50px;
+  background-color: #ffd0a8;
+  margin: 25px 0 0px 32px;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid #ffd0a8;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear; }
+  .call-to-us:hover {
+    background-color: transparent;
+    color: #ffd0a8; }
+
+.contacts {
+  padding: 130px 0; }
+
+.contacts-left-block {
+  width: 50%; }
+
+.contacts-left-block-item {
+  margin: 0 0 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.contacts-block-span {
+  color: #ffd0a8;
+  font-family: "Merriweather-Bold", serif;
+  line-height: .6;
+  letter-spacing: .7px;
+  font-size: 48px; }
+
+.contacts-stay {
+  width: 50%; }
+
+.contacts-work-time {
+  width: 50%; }
+
+.contacts-stay-title, .contacts-work-time-title, .contacts-title, .contacts-address {
+  color: #b18184;
+  font-family: "Montserrat-Bold", sans-serif;
+  letter-spacing: .3px;
+  font-size: 24px;
+  margin: 0 0 21px; }
+
+.contacts-stay-desc, .contacts-work-time-desc, .contacts-address-desc {
+  color: #7f7f7f;
+  line-height: 1.6;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  letter-spacing: .2px; }
+
+.contacts-work-time-desc-span, .contacts-address-desc-span {
+  display: block;
+  width: 100%; }
+
+.contacts-fb-link {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  max-width: 30px;
+  width: 100%; }
+  .contacts-fb-link img {
+    width: 100%; }
+
+.contacts-insta-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #475993;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px; }
+
+.contacts-left-block-item-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%; }
+
+.contacts-left-block-item-btn-call {
+  width: 100%;
+  max-width: 254px;
+  color: #fff;
+  margin: 0 30px 0 0;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+  font-size: 18px;
+  letter-spacing: .2px;
+  background-color: #ffd0a8;
+  border: 1px solid #ffd0a8;
+  border-radius: 40px;
+  padding: 11px 0;
+  cursor: pointer;
+  outline: none;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear; }
+  .contacts-left-block-item-btn-call:hover {
+    background-color: transparent;
+    color: #ffd0a8; }
+
+.contacts-left-block-item-btn-driving {
+  width: 100%;
+  max-width: 254px;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+  font-size: 18px;
+  letter-spacing: .2px;
+  background-color: #ffd0a8;
+  border: 1px solid #ffd0a8;
+  border-radius: 40px;
+  padding: 11px 0;
+  cursor: pointer;
+  outline: none;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear; }
+  .contacts-left-block-item-btn-driving:hover {
+    background-color: transparent;
+    color: #ffd0a8; }
+
+.contacts-left-block-item-btn-driving-mob {
+  display: none; }
+
+.contacts-right-block {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative; }
+
+.contacts-right-block-cake {
+  position: absolute;
+  left: 20px;
+  bottom: 10px;
+  z-index: 10; }
+
+#map {
+  height: 100%;
+  width: 100%;
+  max-width: 564px;
+  max-height: 564px;
+  border-radius: 100%; }
+
+.contacts-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.contacts-title-mob {
+  display: none; }
+
+.about {
+  padding: 70px 0; }
+
+.about-title {
+  font-size: 24px;
+  font-family: "Merriweather-Bold", serif;
+  color: #b18184;
+  text-align: center; }
+
+.about-subtitle {
+  font-size: 60px;
+  color: #ffd0a8;
+  font-family: "Merriweather-Bold", serif;
+  margin: 20px 0 80px 0;
+  text-align: center; }
+
+.about-ft-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.about-ft-block-img {
+  max-width: 542px;
+  width: 100%;
+  max-height: 569px;
+  height: 100%;
+  border-radius: 15px; }
+
+.about-ft-block-desc {
+  width: 100%;
+  max-width: 566px; }
+
+.about-ft-block-desc-item {
+  margin: 20px 0 0 0;
+  color: #202020;
+  font-size: 16px;
+  letter-spacing: .2px;
+  line-height: 29px;
+  font-family: "Montserrat", sans-serif; }
+
+.about-ft-block-desc-ft {
+  color: #202020;
+  letter-spacing: .2px;
+  line-height: 29px;
+  font-family: "Merriweather-Regular", serif;
+  font-size: 18px; }
+  .about-ft-block-desc-ft span {
+    font-size: 48px;
+    color: #ffd0a8; }
+
+.about-ft-block-desc-item-fo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 18px;
+  letter-spacing: .2px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+.about-ft-block-desc-item-fo-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.about-ft-block-desc-item-fo-item-span {
+  color: #ffd0a8;
+  font-size: 48px;
+  display: inline-block;
+  font-family: "Merriweather-Regular", serif;
+  margin: 0 10px 0 0; }
+
+.about-sc-block {
+  margin: 100px 0 0 0; }
+
+.about-sc-block-title {
+  color: #b18184;
+  text-align: center;
+  font-size: 24px;
+  font-family: "Merriweather-Bold", serif;
+  margin: 0 0 20px 0; }
+
+.about-sc-block-subtitle {
+  text-align: center;
+  color: #ffd0a8;
+  text-align: center;
+  font-size: 60px;
+  font-family: "Merriweather-Bold", serif;
+  margin: 0 0 40px 0; }
+
+.about-sc-block-desc {
+  max-width: 620px;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  color: #202020;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+  letter-spacing: .2px; }
+
+.about-sc-block-desc-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 70px 0 0 0; }
+
+.about-sc-block-desc-items-item-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  min-width: 126px;
+  max-width: 127px;
+  min-height: 126px;
+  max-height: 127px;
+  border-radius: 100%;
+  background-color: #fff6e5; }
+
+.about-sc-block-desc-items-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.about-sc-block-desc-items-item-img-ft {
+  max-width: 46px;
+  width: 100%;
+  height: auto; }
+
+.about-sc-block-desc-items-item-img-sc {
+  max-width: 50px;
+  width: 100%;
+  height: auto; }
+
+.about-sc-block-desc-items-item-img-th {
+  max-width: 67px;
+  width: 100%;
+  height: auto; }
+
+.about-sc-block-desc-items-item-img-fo {
+  max-width: 46px;
+  width: 100%;
+  height: auto; }
+
+.about-sc-block-desc-items-item-img-fi {
+  max-width: 51px;
+  width: 100%;
+  height: auto; }
+
+.about-sc-block-desc-items-item-text {
+  margin: 20px  0 0 0;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  letter-spacing: .2px; }
+
+.about-sc-block-desc-items-item-line {
+  min-height: 127px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.about-right-block-cake {
+  position: absolute;
+  right: -50px;
+  bottom: 0;
+  z-index: 10; }
+
+.gallery-title {
+  color: #f67e56;
+  font-family: "Merriweather-Bold", serif;
+  font-size: 48px;
+  text-align: center;
+  line-height: .6;
+  letter-spacing: .5px;
+  padding: 115px 0 80px 0; }
+
+.gallery-subtitle {
+  max-width: 910px;
+  margin: 0 auto 65px;
+  width: 100%;
+  color: #7f7f7f;
+  line-height: 1.8;
+  letter-spacing: .2px;
+  font-size: 16px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif; }
+
+.gallery-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto 100px;
+  max-width: 740px;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.gallery-btns-item {
+  border: 1px solid #d8d8d8;
+  border-radius: 6px;
+  color: #7f7f7f;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: .2px;
+  background-color: transparent;
+  outline: none;
+  padding: 17px;
+  min-width: 172px;
+  text-align: center;
+  margin: 25px 25px 0 0;
+  cursor: pointer;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear; }
+
+.gallery-btns-item.active {
+  background-color: #ffd0a8;
+  color: #fff; }
+
+.gallery-btns-item-moddernWedding {
+  min-width: 342px;
+  padding: 17px 56px;
+  margin: 25px 0 0 0; }
+
+.gallery-btns-item-individual {
+  min-width: 342px;
+  padding: 17px 32px;
+  margin: 25px 25px 0 0; }
+
+.gallery-btns-item-groom {
+  margin: 25px 0 0 0; }
+
+.gallery-photos-item {
+  position: relative;
+  cursor: pointer;
+  line-height: 0; }
+  .gallery-photos-item img {
+    width: 100%; }
+  .gallery-photos-item:hover .gallery-photos-item-desc {
+    opacity: 1;
+    visibility: visible; }
+
+.gallery-photos-item-number {
+  position: absolute;
+  right: 80px;
+  top: 60px;
+  border-radius: 22px;
+  background-color: #b28d8d;
+  width: 100px;
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  z-index: 10;
+  cursor: default;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px; }
+
+.gallery-photos-item-desc {
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  visibility: hidden;
+  cursor: default;
+  -webkit-transition: all .6s linear;
+  transition: all .6s linear; }
+
+.gallery-photos-item-desc-name {
+  color: #fff;
+  font-size: 30px;
+  font-family: "Merriweather-Bold", serif;
+  max-width: 275px;
+  width: 100%;
+  margin: 0 0 10px;
+  line-height: normal; }
+
+.gallery-photos-item-desc-info {
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.6;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: .2px;
+  max-width: 275px;
+  width: 100%; }
+
+.gallery-photos-item-desc-btn {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  min-width: 275px;
+  padding: 16px 0;
+  background-color: #f67e56;
+  border-radius: 30px;
+  border: none;
+  color: #fff;
+  margin: 25px 0 0;
+  cursor: pointer;
+  border: 1px solid transparent;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear; }
+  .gallery-photos-item-desc-btn:hover {
+    background-color: transparent;
+    color: #ffd0a8;
+    border: 1px solid #ffd0a8; }
+
+.gallery-link-bnts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.gallery-link-bnts-prev {
+  color: #b18184;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin: 0 43px 0 0;
+  outline: none; }
+  .gallery-link-bnts-prev img {
+    display: inline-block;
+    margin: 0 15px 0 0; }
+
+.gallery-link-bnts-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 53px 0; }
+
+.gallery-link-bnts-items-item {
+  border: solid 2px #e3e3e3;
+  color: #e3e3e3;
+  font-family: "Montserrat", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  border-radius: 100%;
+  width: 38px;
+  height: 38px;
+  margin: 0 12px 0 0;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear; }
+
+.gallery-link-bnts-items-item.active {
+  border: solid 2px #ffd0a8;
+  color: #ffd0a8; }
+
+.gallery-link-bnts-next {
+  color: #b18184;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin: 0 0 0 31px;
+  outline: none; }
+  .gallery-link-bnts-next img {
+    display: inline-block;
+    margin: 0 0 0 15px; }
+
+.occasion-title {
+  color: #f67e56;
+  font-family: "Merriweather-Bold", serif;
+  font-size: 48px;
+  text-align: center;
+  line-height: .6;
+  letter-spacing: .5px;
+  padding: 115px 0 80px 0; }
+
+.occasion-subtitle {
+  max-width: 910px;
+  margin: 0 auto 65px;
+  width: 100%;
+  color: #7f7f7f;
+  line-height: 1.8;
+  letter-spacing: .2px;
+  font-size: 16px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif; }
+
+.occasion-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto 100px;
+  max-width: 931px;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.occasion-btns-item {
+  border: 1px solid #d8d8d8;
+  border-radius: 6px;
+  color: #7f7f7f;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: .2px;
+  background-color: transparent;
+  outline: none;
+  padding: 17px;
+  min-width: 102px;
+  text-align: center;
+  margin: 25px 25px 0 0;
+  cursor: pointer;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear; }
+
+.occasion-btns-item.active {
+  background-color: #ffd0a8;
+  color: #fff; }
+
+.occasion-btns-item-baby, .occasion-btns-item-kids {
+  min-width: 137px; }
+
+.occasion-btns-item-adults, .occasion-btns-item-christmas, .occasion-btns-item-cookies {
+  min-width: 174px; }
+
+.occasion-btns-item-easter, .occasion-btns-item-fashion {
+  min-width: 172px; }
+
+.occasion-btns-item-easter {
+  margin: 25px 0 0 0; }
+
+.occasion-btns-item-pastry {
+  min-width: 206px;
+  margin: 25px 0 0 0; }
+
+.occasion-btns-item-graduation {
+  min-width: 213px; }
+
+.grid-item {
+  width: 33.333%; }
+
+.occasion-photos-item {
+  position: relative;
+  cursor: pointer;
+  line-height: 0; }
+  .occasion-photos-item img {
+    width: 100%; }
+  .occasion-photos-item:hover .occasion-photos-item-desc {
+    opacity: 1;
+    visibility: visible; }
+
+.occasion-photos-item-number {
+  position: absolute;
+  right: 80px;
+  top: 60px;
+  border-radius: 22px;
+  background-color: #b28d8d;
+  width: 100px;
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  z-index: 10;
+  cursor: default;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px; }
+
+.occasion-photos-item-desc {
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  visibility: hidden;
+  cursor: default;
+  -webkit-transition: all .6s linear;
+  transition: all .6s linear; }
+
+.occasion-photos-item-desc-name {
+  color: #fff;
+  font-size: 30px;
+  font-family: "Merriweather-Bold", serif;
+  max-width: 275px;
+  width: 100%;
+  margin: 0 0 10px;
+  line-height: normal; }
+
+.occasion-photos-item-desc-info {
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.6;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: .2px;
+  max-width: 275px;
+  width: 100%; }
+
+.occasion-photos-item-desc-btn {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  min-width: 275px;
+  padding: 16px 0;
+  background-color: #f67e56;
+  border-radius: 30px;
+  border: none;
+  color: #fff;
+  margin: 25px 0 0;
+  cursor: pointer;
+  border: 1px solid transparent;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear; }
+  .occasion-photos-item-desc-btn:hover {
+    background-color: transparent;
+    color: #ffd0a8;
+    border: 1px solid #ffd0a8; }
+
+.occasion-link-bnts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.occasion-link-bnts-prev {
+  color: #b18184;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin: 0 43px 0 0;
+  outline: none; }
+  .occasion-link-bnts-prev img {
+    display: inline-block;
+    margin: 0 15px 0 0; }
+
+.occasion-link-bnts-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 53px 0; }
+
+.occasion-link-bnts-items-item {
+  border: solid 2px #e3e3e3;
+  color: #e3e3e3;
+  font-family: "Montserrat", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  border-radius: 100%;
+  width: 38px;
+  height: 38px;
+  margin: 0 12px 0 0;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear; }
+
+.occasion-link-bnts-items-item.active {
+  border: solid 2px #ffd0a8;
+  color: #ffd0a8; }
+
+.occasion-link-bnts-next {
+  color: #b18184;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin: 0 0 0 31px;
+  outline: none; }
+  .occasion-link-bnts-next img {
+    display: inline-block;
+    margin: 0 0 0 15px; }
+
+.modal-wrap {
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: rgba(117, 117, 117, 0.5);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear; }
+  .modal-wrap.show {
+    opacity: 1;
+    visibility: visible; }
+
+.modal {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  max-height: 730px;
+  height: auto; }
+
+.container-modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.modal-img {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff; }
+  .modal-img img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: auto; }
+
+.modal-gallery-photos-item-number {
+  border-radius: 25px;
+  background-color: #b28d8d;
+  width: 100px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  z-index: 10;
+  cursor: default;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px; }
+
+.modal-desc {
+  width: 50%;
+  background-color: #fff;
+  padding: 0px 45px; }
+
+.modal-back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  color: #b18184;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  letter-spacing: .2px; }
+  .modal-back img {
+    displya: inline-block;
+    margin: 0 15px 0 0; }
+
+.modal-num-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 25px 0 29px; }
+
+.modal-desc-price {
+  color: #b18184;
+  letter-spacing: .3px;
+  line-height: 1.2;
+  font-family: "Montserrat-Bold", sans-serif;
+  font-size: 24px;
+  text-align: center;
+  margin: 0 0 31px; }
+
+.modal-desc-title {
+  color: #ffd0a8;
+  text-align: center;
+  line-height: .8;
+  letter-spacing: .5px;
+  font-size: 36px;
+  font-family: "Merriweather-Bold", serif;
+  margin: 0 0 25px; }
+
+.modal-desc-subtitle {
+  color: #3f3f3f;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  line-height: 1.8;
+  text-align: center;
+  letter-spacing: -0.6px;
+  margin: 0 0 30px 0; }
+
+.modal-desc-size {
+  color: #202020;
+  font-family: "Montserrat-Bold", sans-serif;
+  text-align: center;
+  margin: 0 0 45px; }
+
+.modal-inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.modal-input {
+  border: 2px solid #ddd;
+  border-radius: 30px;
+  max-width: 248px;
+  width: 100%;
+  max-height: 59px;
+  height: 100%;
+  padding: 20px 33px;
+  margin: 0 14px 28px 0;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #888888; }
+
+.modalbutton {
+  margin: 40px auto 65px;
+  display: block;
+  background-color: #ffd0a8;
+  color: #fff;
+  max-height: 59px;
+  height: 100%;
+  min-width: 298px;
+  border-radius: 30px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  outline: none;
+  font-size: 18px;
+  padding: 18px 0;
+  border: none;
+  cursor: pointer; }
+
+.modal-arrow {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+  cursor: pointer;
+  z-index: 101; }
+
+.modal-prev-item {
+  top: 50%;
+  left: 150px;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%); }
+
+.modal-next-item {
+  top: 50%;
+  right: 150px;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%); }
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto; }
+
+.container.container-flavors {
+  max-width: 1440px; }
+
+.container.container-about {
+  max-width: 1190px; }
+
+.container.container-modal {
+  max-width: 1230px;
+  padding: 0; }
+
+section {
+  max-width: 100%;
+  width: 100vw; }
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  background-color: #fffefa; }
+
+body.hidden {
+  overflow: hidden; }
+
+.header {
+  background-color: #b28d8d;
+  padding: 26px 0; }
+
+.header-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.header-logo img, .header-logo svg {
+  max-width: 232px;
+  height: auto; }
+
+.header-nav {
+  margin: 0 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 60%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.header-nav-btn {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px; }
+
+.nav-mob {
+  display: none; }
+
+.header.main {
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1; }
+
+.header.main.open {
+  background-color: #b28d8d;
+  z-index: 1111;
+  position: fixed; }
+
+.footer {
+  padding: 30px 0;
+  border-top: 1px solid #b28d8d; }
+
+.footer-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #7f7f7f;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif; }
+
+.footer-desc {
+  max-width: 255px;
+  width: 100%;
+  line-height: 1.8;
+  letter-spacing: .2px; }
+
+.footer-addres {
+  max-width: 272px;
+  width: 100%;
+  line-height: 1.8;
+  letter-spacing: .2px; }
+
+.footer-phone {
+  max-width: 150px;
+  width: 100%;
+  line-height: 1.8;
+  letter-spacing: .2px; }
+  .footer-phone a {
+    color: #7f7f7f; }
+  .footer-phone span {
+    color: #b28d8d; }
+
+.footer-sm {
+  max-width: 150px;
+  width: 100%;
+  line-height: 1.8; }
+
+.footer-fb-link {
+  display: block;
+  color: #475993; }
+
+.footer-insta-link {
+  color: #7f7f7f; }
+
+.index {
+  background-color: #000;
+  width: 100%;
+  height: 100vh;
+  max-height: 100%;
+  background: url(../img/IMG_0123.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative; }
+  .index:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color: #000;
+    opacity: .5; }
+
+.index-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100vh;
+  max-height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.index-title {
+  font-size: 64px;
+  font-family: "Merriweather-Bold", serif;
+  text-align: left;
+  line-height: .45;
+  letter-spacinng: -0.1px;
+  margin: 0% 0 55px 0%;
+  color: #ffd0a8;
+  z-index: 1; }
+
+.index-subtitle {
+  color: #fff;
+  max-width: 540px;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: .3px;
+  z-index: 1; }
+
+.index-down {
+  position: absolute;
+  bottom: 30px;
+  right: 10%;
+  z-index: 10; }
+
+.index-down-btn {
+  background-color: transparent;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 215px;
+  width: 100%;
+  font-size: 24px;
+  letter-spacing: .3px;
+  font-family: "Montserrat-Bold", sans-serif;
+  border: none;
+  outline: none;
+  cursor: pointer; }
+
+.index-down-btn-circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 100%;
+  background-color: #fff; }
+
+.wedding-title {
+  color: #ffd0a8;
+  text-align: center;
+  padding: 120px 0 0;
+  margin: 0 0 75px;
+  line-height: .45;
+  font-size: 64px;
+  font-family: "Merriweather-Bold", serif; }
+
+.wedding-desc {
+  color: #b18184;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  margin: 0 auto 0 21%;
+  max-width: 580px;
+  letter-spacing: .2px;
+  line-height: 1.45;
+  padding: 0 0 55px 0; }
+
+.wedding-gallery-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative; }
+
+.wedding-gallery-wrap-img {
+  max-width: 700px;
+  width: 100%;
+  position: relative;
+  visibility: visible;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear; }
+  .wedding-gallery-wrap-img.hide {
+    visibility: hidden;
+    display: none;
+    opacity: 0; }
+  .wedding-gallery-wrap-img img {
+    max-width: 100%;
+    height: auto; }
+
+.wedding-gallery-wrap-links {
+  max-width: 440px;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.wedding-gallery-wrap-btn {
+  width: 80px;
+  height: 80px;
+  border: none;
+  outline: none;
+  border-radius: 100%;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0 5px 7px 0 rgba(177, 129, 132, 0.13);
+          box-shadow: 0 5px 7px 0 rgba(177, 129, 132, 0.13);
+  margin: 0 20px;
+  cursor: pointer;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear; }
+  .wedding-gallery-wrap-btn.hide {
+    opacity: .5;
+    pointer-events: none; }
+
+.wedding-gallery-wrap-counter-text {
+  color: #b18184;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.45;
+  letter-spacing: .2px;
+  font-size: 20px;
+  display: block;
+  padding: 60px 0 0 0;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear; }
+  .wedding-gallery-wrap-counter-text.hide {
+    opacity: 0; }
+
+.wedding-gallery-wrap-counter-span {
+  font-size: 144px;
+  letter-spacing: .5px;
+  line-height: .2;
+  font-family: "Montserrat-Bold", sans-serif;
+  opacity: 1;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
+  color: #b18184; }
+  .wedding-gallery-wrap-counter-span.hide {
+    font-size: 72px;
+    opacity: .23;
+    line-height: .4; }
+
+.wedding-gallery-wrap-counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear; }
+
+.wedding-gallery-wrap-line {
+  font-family: "Montserrat-Bold", sans-serif;
+  font-size: 72px;
+  line-height: .4;
+  color: #b18184;
+  margin: 0px 10px auto;
+  display: inline-block; }
+
+.wedding-gallery-wrap-img-link {
+  position: absolute;
+  right: -75px;
+  bottom: 25px;
+  width: 265px; }
+  .wedding-gallery-wrap-img-link a {
+    padding: 18px 31px;
+    background-color: #ffd0a8;
+    border-radius: 32px;
+    color: #222127;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    line-height: 1.6;
+    letter-spacing: .2px;
+    display: block;
+    position: relative; }
+    .wedding-gallery-wrap-img-link a img {
+      position: absolute;
+      right: -15px;
+      top: 35%; }
+
+.family-title {
+  padding: 293px 0 0;
+  color: #ffd0a8;
+  letter-spacing: -0.1px;
+  font-size: 64px;
+  font-family: "Merriweather-Bold", serif;
+  line-height: .45;
+  margin: 0 17% 75px auto;
+  max-width: 690px;
+  width: 100%; }
+
+.family-desc {
+  max-width: 580px;
+  width: 100%;
+  color: #b18184;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: .2px;
+  line-height: 1.45;
+  font-size: 20px;
+  margin: 0 auto 0 21%; }
+  .family-desc a {
+    color: #b18184;
+    font-weight: bold; }
+
+.family-photos {
+  margin: 70px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 0px 70px 0; }
+
+.family-photo1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 100%;
+  width: 100%; }
+
+.family-photo1-img {
+  max-width: 100%;
+  height: auto; }
+
+.family-photo1-text {
+  color: #b18184;
+  line-height: 1.4;
+  letter-spacing: .2px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  display: block;
+  margin: 25px 0 29px; }
+
+.family-photo2-text {
+  color: #b18184;
+  line-height: 1.4;
+  letter-spacing: .2px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  display: block;
+  margin: 25px 0 29px; }
+
+.family-photo1-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  max-width: 685px;
+  width: 100%; }
+
+.family-photo1-contacts-stay {
+  max-width: 258px;
+  width: 100%;
+  margin: 0px 30px 0 0; }
+
+.family-photo1-contacts-time {
+  max-width: 253px;
+  width: 100%; }
+
+.family-photo1-contacts-address {
+  max-width: 543px;
+  width: 100%;
+  margin: 35px 0 0 0; }
+
+.family-photo2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 397px;
+  width: 100%;
+  margin: 55px 0 0 57px; }
+
+.family-photo2-mob {
+  display: none; }
+
+.contacts-stay-desc-phone-a {
+  color: #b18184; }
+
+.family-photo2-fb-link {
+  margin: 135px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 180px;
+  width: 100%;
+  color: #475993;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px; }
+  .family-photo2-fb-link img {
+    width: 30px;
+    height: 30px;
+    margin: 0 15px 0; }
+
+.family-photo2-fb-link-mob {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 180px;
+  width: 100%;
+  color: #475993;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px; }
+  .family-photo2-fb-link-mob img {
+    width: 30px;
+    height: 30px;
+    margin: 0 15px 0 0; }
+
+.footer-wrap-mob {
+  display: none; }
+
+.family-photo1-contacts-mob {
+  display: none; }
+
+.contacts-stay-desc a {
+  color: #b18184; }
+
+.modal-num-btn-mob {
+  display: none; }
+
+@media all and (max-width: 1660px) {
+  .modal-prev-item {
+    left: 10px; }
+  .modal-next-item {
+    right: 10px; } }
+
+@media all and (max-width: 1400px) {
+  .flavors-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .modal-img {
+    width: 40%; }
+  .modal-desc {
+    padding: 0 25px;
+    width: 48%; }
+  .modal-arrow {
+    width: 55px;
+    height: 55px; } }
+
+@media all and (max-width: 1200px) {
+  .modal-desc {
+    width: 40%; }
+  .modal-num-btn {
+    margin: 10px 0; }
+  .modal-desc-price {
+    margin: 0 0 20px; }
+  .modal-desc-title {
+    margin: 0 0 15px; }
+  .modal-desc-subtitle {
+    margin: 0 0 10px; }
+  .modal-desc-size {
+    margin: 0 0 25px; }
+  .modal-input {
+    padding: 15px 23px;
+    margin: 0 0 18px; }
+  .modal-inputs {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .modalbutton {
+    margin: 20px auto 35px; }
+  .about-ft-block-desc {
+    padding: 0 20px; }
+  .about-right-block-cake {
+    right: 0; }
+  .contacts-stay {
+    width: 100%;
+    margin: 0 0 50px 0; }
+  .contacts-work-time {
+    width: 100%; }
+  .contacts-stay-desc-mail {
+    display: block; }
+  .family-photo2-fb-link {
+    margin: 13% 0 0; } }
+
+@media all and (max-width: 1024px) {
+  .occasion-photos-item-desc-name {
+    font-size: 30px; }
+  .modal-prev-item, .modal-next-item {
+    display: none; }
+  .modal {
+    overflow: auto;
+    width: auto;
+    max-height: 100%; }
+  .container-modal {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .modal-img {
+    position: relative; }
+  .modal-gallery-photos-item-number, .modal-back {
+    display: none; }
+  .modal-num-btn-mob {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #fff; }
+  .modalbutton {
+    min-width: 240px; }
+  .modal-img, .modal-desc {
+    width: 320px; }
+  .modal-arrow {
+    position: static; }
+  .modal-back-mob, .modal-gallery-photos-item-number-mob {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .modal-gallery-photos-item-number-mob {
+    width: 70px;
+    height: 35px; }
+  .about-ft-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .contacts-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse; }
+  .contacts-left-block {
+    width: 100%; }
+  .contacts-right-block {
+    width: 100%;
+    min-height: 564px;
+    height: 100%; }
+  #map {
+    min-height: 564px;
+    min-width: 564px;
+    margin: 0 auto; }
+  .contacts-title, .contacts-block-span {
+    display: none; }
+  .contacts-title-mob {
+    display: block; }
+  .contacts-titletext-mob {
+    color: #b18184;
+    font-family: "Montserrat-Bold", sans-serif;
+    letter-spacing: .3px;
+    font-size: 18px;
+    width: 100%;
+    text-align: center; }
+  .contacts-block-span-mob {
+    color: #ffd0a8;
+    font-family: "Merriweather-Bold", serif;
+    line-height: noraml;
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 13px 20px 45px;
+    letter-spacing: .7px;
+    font-size: 24px; }
+  .contacts-address {
+    width: 100%; }
+  .contacts-left-block-item-btn-driving {
+    display: none; }
+  .contacts-left-block-item-btn-driving-mob {
+    width: 100%;
+    max-width: 254px;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.6;
+    font-size: 18px;
+    letter-spacing: .2px;
+    background-color: #ffd0a8;
+    border: 1px solid #ffd0a8;
+    border-radius: 40px;
+    padding: 11px 0;
+    cursor: pointer;
+    outline: none;
+    display: block;
+    margin: 50px auto 0;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear; }
+    .contacts-left-block-item-btn-driving-mob:hover {
+      background-color: transparent;
+      color: #ffd0a8; }
+  .contacts-left-block-item-btn-call {
+    margin: 0 auto; }
+  .contacts {
+    padding: 130px 0 0px; }
+  .footer-wrap-mob {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.2px;
+    color: #7f7f7f; }
+  .wedding-gallery-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .wedding-gallery-wrap-img-link {
+    margin: 50px auto;
+    display: block;
+    position: static;
+    right: 0;
+    bottom: 0; }
+  .wedding-gallery-wrap-links {
+    margin: 50px  0 0 0; }
+  .wedding-gallery-wrap-img-link img {
+    display: none; }
+  .family-photo1-contacts-stay {
+    margin: 0 0 0;
+    max-width: 100%; }
+  .family-photo1-contacts-time {
+    max-width: 100%;
+    margin: 35px 0 0; }
+  .family-photo1-contacts-address {
+    max-width: 100%; }
+  .footer-wrap {
+    display: none; }
+  .wedding-desc {
+    margin: 0 auto; }
+  .family-desc {
+    margin: 0 auto; }
+  .family-title {
+    text-align: center;
+    margin: 0 0 75px 0;
+    max-width: 100%;
+    padding: 150px 0 0; }
+  .index-down {
+    margin: 0 -108px 0 0;
+    right: 50%; }
+  .header {
+    z-index: 1001;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0; }
+  .header-nav {
+    display: none; }
+  .header-fb {
+    display: none; }
+  .header-logo {
+    margin: 0 0 0 auto; }
+  .nav-mob-huburger-span {
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 2px;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear; }
+  .nav-mob-humburger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 20px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 30px;
+    margin: 0 0 0 auto;
+    position: relative; }
+    .nav-mob-humburger.open .nav-mob-huburger-span:nth-child(2) {
+      width: 0; }
+    .nav-mob-humburger.open .nav-mob-huburger-span:nth-child(1) {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg); }
+    .nav-mob-humburger.open .nav-mob-huburger-span:nth-child(3) {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg); }
+  .nav-mob {
+    display: block;
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear; }
+    .nav-mob.open {
+      visibility: visible;
+      opacity: 1; }
+  .nav-mob-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    height: 70%;
+    margin: 15% 0;
+    text-align: center; }
+  .header-nav-btn-mob {
+    color: #2e333b;
+    font-size: 12px;
+    font-family: "Montserrat-Bold", sans-serif;
+    letter-spacing: 1px;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear; }
+    .header-nav-btn-mob.active {
+      color: #ffd0a8; }
+  .about {
+    padding: 130px 0 0; }
+  .about-sc-block-desc-items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .about-title {
+    font-size: 24px; }
+  .about-subtitle {
+    font-size: 32px; }
+  .about-sc-block-title {
+    font-size: 24px; }
+  .about-sc-block-subtitle {
+    font-size: 32px; }
+  .about-sc-block-desc-items-item-line {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg); }
+  .falvors-options-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .falvors-options-wrap-img1 {
+    max-width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .falvors-options-wrap-img2 {
+    max-width: 50%; }
+  .falvors-options-wrap-desc-item {
+    max-width: 100%; }
+  .falvors-options-wrap-desc-item-text {
+    max-width: 100%; }
+  .falvors-options-wrap-desc {
+    margin: 50px 0 0; }
+  .falvors-options-wrap-desc-sc {
+    margin: 0 0; }
+  .call-to-us {
+    margin: 0 auto; }
+  .flavors {
+    padding: 130px 15px; }
+  .flavors-group-item-desc {
+    max-width: 100%; }
+  .modal-desc-title {
+    font-size: 30px; }
+  .modal-desc-subtitle, .modal-desc-size {
+    font-size: 16px; }
+  .modal-input {
+    border-radius: 5px; }
+  .gallery-photos, .occasion-photos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .grid-item {
+    width: 100%;
+    margin: 10px;
+    padding: 0 15px; }
+  .gallery-link-bnts, .occasion-link-bnts {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .gallery-photos-item-number, .occasion-photos-item-number {
+    right: 20px;
+    top: 20px; } }
+
+@media all and (max-width: 768px) {
+  .modal-back-mob {
+    font-size: 18px; }
+  .contacts-right-block {
+    min-height: 100%; }
+  #map {
+    min-height: 450px;
+    min-width: 450px;
+    max-width: 480px; }
+  .family-photos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 0 30px 0; }
+  .index-title {
+    font-size: 32px;
+    line-height: normal;
+    letter-spacing: 0;
+    width: 100%; }
+  .index-subtitle {
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: .2px; }
+  .index-text {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 40% 0 0; }
+  .index-title {
+    margin: 0 0 25px 0; }
+  .wedding-title {
+    font-size: 32px;
+    margin: 0 0 30px; }
+  .family-title {
+    font-size: 32px; }
+  .wedding-gallery-wrap-img-link a {
+    font-size: 18px; }
+  .family-photo1-contacts, .family-photo2-fb-link, .family-photo2-text {
+    display: none; }
+  .family-photo1-text {
+    margin: 16px 0 29px; }
+  .family-photo2 {
+    margin: 0; }
+  .family-photo1-contacts-mob {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+  .family-photo2-text-mob {
+    display: block;
+    width: 100%;
+    margin: 0 0 69px; }
+  .family-photo2-mob {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 397px;
+    width: 100%;
+    margin: 40px auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .about-right-block-cake {
+    display: none; }
+  .about-ft-block-img img {
+    max-width: 100%;
+    height: auto; }
+  .about-subtitle, .about-sc-block-subtitle, .contacts-stay-title, .contacts-work-time-title, .contacts-address, .gallery-title, .occasion-title {
+    font-size: 24px; }
+  .about-title, .about-sc-block-title, .contacts-stay-desc, .contacts-work-time-desc, .contacts-address-desc, .about-ft-block-desc-item.about-ft-block-desc-ft {
+    font-size: 18px; }
+  .about-ft-block-desc-item {
+    font-size: 16px; }
+  .about-ft-block-desc-item-fo-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 18px;
+    width: 50%; }
+  .gallery-subtitle, .occasion-subtitle {
+    text-align: left; }
+  .about-ft-block-desc-item-fo-item-span {
+    margin: 0;
+    font-size: 48px;
+    line-height: normal; }
+  .flavors-title-sup {
+    font-size: 18px; }
+  .flavors-title, .falvors-options-title {
+    font-size: 24px; }
+  .flavors-desc {
+    font-size: 16px;
+    margin: 0 auto 50px; }
+  .flavors-group-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-conetnt: center; }
+  .flavors-group-item-img {
+    margin: 0; }
+  .falvors-options-wrap-img2 img {
+    max-width: 100%; }
+  .flavors {
+    padding: 130px 0 50px; }
+  .flavors-desc {
+    text-align: left; }
+  .gallery-btns, .occasion-btns {
+    alig-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .gallery-btns-item, .occasion-btns-item {
+    min-width: 150px;
+    font-size: 14px;
+    margin-right: 11px; }
+  .gallery-btns-item-individual, .gallery-btns-item-moddernWedding {
+    min-width: 310px; }
+  .gallery-link-bnts-items, .occasion-link-bnts-items {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .occasion-link-bnts-items-item, .gallery-link-bnts-items-item {
+    margin: 10px 0; }
+  .gallery-photos-item-number, .occasion-photos-item-number {
+    width: 70px;
+    height: 35px; } }
+
+@media all and (max-width: 480px) {
+  .about-ft-block-desc-item-fo-item {
+    text-align: center; }
+  .wedding-title {
+    line-height: normal; }
+  .wedding-gallery-wrap-counter-span {
+    font-size: 100px; }
+  .wedding-gallery-wrap-line {
+    font-size: 62px; }
+  .wedding-gallery-wrap-counter-span.hide {
+    font-size: 64px; }
+  .wedding-gallery-wrap-btn {
+    margin: 0;
+    width: 58px;
+    height: 58px; }
+  .family-title {
+    line-height: normal; }
+  .footer-wrap-mob {
+    text-align: center;
+    padding: 0 40px; }
+  .index-down {
+    bottom: 100px;
+    margin: 0 -120px 0 0; }
+  .index-down-btn-circle {
+    display: inline-block;
+    margin: 0 0 0 5px; }
+  #map {
+    min-height: 290px;
+    min-width: 290px;
+    max-width: 320px; }
+  .gallery-btns-item, .occasion-btns-item {
+    min-width: 130px;
+    margin-right: 11px;
+    width: auto; }
+  .gallery-btns-item-individual, .gallery-btns-item-moddernWedding {
+    min-width: 286px;
+    padding: 17px 0; }
+  .gallery-btns-item-groom {
+    margin-right: 0; } }

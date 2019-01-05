@@ -1,0 +1,4027 @@
+@import "reset"
+@import "fonts"
+
+$green: #08ef85
+$black: #252525
+$white: #fff
+$silver: #222328
+$blue: #2a36e6
+$boldGrey: #454545
+$smallFont: 14px
+$middleFont: 16px
+$largeFont: 20px
+$x-largeFont: 22px
+$fz24: 24px
+$xxx-largeFont: 60px
+$font36: 36px
+$font18: 18px
+$font50: 50px
+$font48: 48px
+
+
+//@media all and (max-width: 768px)
+
+//media
+.container
+	max-width: 1130px
+	width: 100%
+	padding: 0 15px
+	margin: 0 auto
+//
+.speakers-container
+	max-width: 1300px
+html
+	min-height: 100%
+	// background: #222121
+*
+	box-sizing: border-box
+body
+	margin: 0
+	padding: 0
+	font-size: $smallFont
+	min-height: 100%
+	height: 100%
+	font-family: 'RobotoMono-Light', sans-serif
+	// background-image: url(../img/stub-bcg.jpg)
+	// background-repeat: no-repeat 
+	// background-position: center center
+	// background-size: 100% 100%
+	// background-attachment: fixed
+.body-start
+	position: absolute
+	left: 0
+	top: 0
+	width: 100%
+	height: 100%
+	background-color: black
+	conetnt: ''
+	z-index: 100
+	overfllow: hidden
+	transition: all .3s linear
+.main-page
+	background: #1b1a1b
+a
+	font-family: 'IBMPlexMono-Regular', sans-serif
+	text-decoration: none
+button
+	outline: none
+	border: none
+	background: none
+	cursor: pointer
+h1,h2,h3,h4,h5,h6
+	margin: 0
+	padding: 0
+.btn-green
+	background: $green
+	border: 1px solid $green
+	color: $black
+	display: inline-block
+	padding: 12px 47px
+	font-family: 'IBMPlexMono-Medium', sans-serif
+	transition: color .3s, background-color .3s
+.btn-green:hover
+	background: transparent
+	color: $green
+.btn-small
+	font-size: 14px
+.btn-medium
+	font-size: 16px
+.fidex-footer-section
+	position: fixed
+	bottom: 30px
+	left: 25px
+	color: #fff 
+	content: ''
+	font-family: 'IBMPlexMono-Medium', sans-serif
+	font-size: $smallFont
+	z-index: 100
+	span
+		color: $green
+.wrapper
+	// max-width: 1600px
+	margin: 0 auto
+	min-height: 100%
+	display: flex
+	flex-wrap: wrap
+	position: relative
+.main-content
+	padding: 0 0 50px
+.main-green-cross-decr
+	position: absolute
+	top: 130px
+	left: 20px
+	z-index: 1
+	transform: rotate(90deg)
+.main-green-cross-decr-img
+	opacity: 0
+	transition: all .5s linear 1.7s
+	&:nth-child(2)
+		transition: all .5s linear 1.6s
+	&:nth-child(3)
+		transition: all .5s linear 1.5s
+	&:nth-child(4)
+		transition: all .5s linear 1.4s
+	&:nth-child(5)
+		transition: all .5s linear 1.3s
+	&:nth-child(6)
+		transition: all .5s linear 1.2s
+	&:nth-child(7)
+		transition: all .5s linear 1.1s
+	&:nth-child(8)
+		transition: all .5s linear 1s
+.main-green-cross-decr-img , 
+.main-greenwhite-cross-decr-img
+	&.bounseIn
+		opacity: 1
+.main-greenwhite-cross-decr-img
+	opacity: 0
+	transition: all .5s linear 1s
+	&:nth-child(2)
+		transition: all .5s linear 1.2s
+	&:nth-child(3)
+		transition: all .5s linear 1.4s
+	&:nth-child(4)
+		transition: all .5s linear 1.7s
+.main-green-cross-decr1
+	position: absolute
+	top: 25%
+	right: 5%
+	z-index: 1
+	opacity: 0
+	transition: all .5s linear 1.4s
+	&.bounseIn
+		opacity: 1
+.main-greenwhite-cross-decr
+	position: absolute
+	bottom: 20%
+	left: 25%
+	z-index: 1
+.main-green-sicrle-decr
+	position: absolute
+	bottom: 13%
+	left: 60%
+	z-index: 1
+	opacity: 0
+	transition: all .5s linear 1.5s
+	&.bounseIn
+		opacity: 1
+.main-green-points
+	position: absolute
+	bottom: 15.3%
+	left: 48%
+	opacity: 0
+	transition: all .5s linear 1.6s
+	&.bounseIn
+		opacity: 1
+.main-white-wave4row
+	position: absolute
+	bottom: 50%
+	left: 28%
+	// opacity: 0
+	transition: all .5s linear 1s
+	&.bounseIn
+		opacity: 1
+.main-white-wave4row1
+	position: absolute
+	bottom: 17%
+	left: 53%
+	transform: rotate(25deg)
+	// opacity: 0
+	transition: all .5s linear 1.2s
+	&.bounseIn
+		opacity: 1
+.main-white-wave-decr
+	position: absolute
+	bottom: 22%
+	right: 0%
+	z-index: 1
+	opacity: 0
+	transition: all .5s linear 1.5s
+	&.translateY
+		opacity: 1
+.main-white-wave-decr1
+	position: absolute
+	bottom: 23%
+	right: .5%
+	z-index: 1
+	opacity: 0
+	transition: all .5s linear 1.4s
+	&.translateY
+		opacity: 1
+	/////////////////////////////////////////
+// .speakers.fp-bg
+// 	background: url('../img/a.png')
+// .what-is.fb-bg
+// 	background: url('../img/a.png')
+///////////////////////////////////////////
+.header-index
+	position: fixed
+	z-index: 10000
+.header
+	width: 100%
+	align-self: flex-start
+.header-wrap
+	width: 100%
+	padding: 18px 20px 15px
+	display: flex
+	opacity: 0
+	justify-content: space-between
+	align-items: center
+	transform: translateY(150px)
+	transition: all .5s linear .5s
+	&.translateY
+		opacity: 1
+		transform: translateY(0)
+	.header-logo
+		display: inline-block
+		max-width: 190px
+		height: auto
+		position: relative
+		z-index: 1000
+		img
+			width: 100%
+			height: auto
+	.nav-text
+		display: inline-block
+		position: relative
+		.use-my-code-link
+		.become-sponsor-link
+			padding: 10px 48px
+			color: $white
+.header-nav-btn
+	margin: 0 25px
+	color: $white
+	font-size: $smallFont
+	font-family: 'IBMPlexMono-Medium', sans-serif
+	letter-spacing: .1px
+	// overfllow: hidden
+	position: relative
+	&:after
+		content: ''
+		width: 0%
+		display: block
+		margin: 0 auto
+		height: 2px
+		top: 50%
+		background-color: #fff
+		position: absolute
+		transition: all .2s linear
+		display: block
+	&:hover
+		&:after
+			width: 90%
+.header-nav-menu-span
+	height: 1px
+	width: 70%
+	background-color: #fff
+	transition: all .3s linear
+.header-nav-menu-span:nth-child(2)
+	width: 100%
+.header-nav-menu
+	max-width: 45px
+	width: 100%
+	height: 24px
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	align-items: flex-end
+	position: absolute
+	top: 20%
+	right: 0
+	cursor: pointer
+	&:hover > .header-nav-menu-span
+		width: 100%
+.header-btn-index
+	margin: 0 80px 0 20px
+.main
+	width: 100%
+	// padding: 80px 0
+	&-content
+		display: flex
+		justify-content: space-between
+		align-items: center
+.text-animate-op1
+	opacity: 0
+	transform: translateY(20px) rotate(3deg)
+	transition: all .65s ease .1s
+.text-animate-op2
+	opacity: 0
+	transform: translateY(20px) rotate(3deg)
+	transition: all .65s ease .3s
+.text-animate-op3
+	opacity: 0
+	transform: translateY(20px) rotate(3deg)
+	transition: all .65s ease .5s
+.text-animate-op4
+	opacity: 0
+	transform: translateY(20px) rotate(3deg)
+	transition: all .65s ease .7s
+.text-animate-op5
+	opacity: 0
+	transform: translateY(20px) rotate(3deg)
+	transition: all .65s ease 
+.text-animate-op
+	opacity: 1
+	transform: translateY(0px)
+	// transition: 1s all linear
+.img-wrap-statue
+	// width: 50%
+	height: 700px
+	width: 515px
+	opacity: 0
+	background-image: url(../img/statue.png)
+	bacground-repeat: no-repeat
+	position: relative
+	&:before
+		background-image: url(../img/statue.png)
+.slide-counter
+	height: 100px
+	z-index: 10
+	display: flex
+	justify-content: space-between
+	flex-direction: column
+	position: fixed
+	align-items: center
+	left: 20px
+	top: 40%
+	opacity: 0
+	transform: translateY(150px)
+	transition: all .5s linear .5s
+	&.translateY
+		opacity: 1
+		transform: translateY(0px)
+.slide-counter-span
+	font-size: $smallFont
+	font-family: 'IBMPlexMono-Medium', sans-serif
+	color: $white
+.slide-counter-span-num
+	color: $green
+	opacity: 1
+	transition: all .5s linear
+	&.op0
+		opacity: 0
+.slide-counter-span-line
+	height: 50%
+	width: 1px
+	background-color: $white
+.soc-wrap
+	position: fixed
+	bottom: 22px
+	right: 31px
+	z-index: 1001
+	display: flex
+	flex-direction: column
+	z-index: 100
+	a
+		color: $white
+		transition: color .3s
+		display: inline-block
+		margin: 14px auto
+		i
+			font-size: 16px
+.soc-wrap-img
+	transform: translateY(40px)
+	opacity: 0
+	display: block
+	transition: all .5s cubic-bezier(.37,.01,0,.98) .5s
+	&.translateY
+		transform: translateY(0px)
+		opacity: 1
+	&:hover .soc-fill
+		fill: $green
+		transition: all .3s linear 
+.soc-wrap-img-sc
+	transform: translateY(40px)
+	display: block
+	opacity: 0
+	transition: all .5s cubic-bezier(.37,.01,0,.98) .55s
+	// transition-delay: .15s
+	&.translateY
+		transform: translateY(0px)
+		opacity: 1
+	&:hover .soc-fill
+		fill: $green
+		transition: all .3s linear 
+.soc-wrap-img-th
+	transform: translateY(40px)
+	display: block
+	opacity: 0
+	transition: all .5s cubic-bezier(.37,.01,0,.98) .6s
+	// transition-delay: .2s
+	&.translateY
+		transform: translateY(0px)
+		opacity: 1
+	&:hover .soc-fill
+		fill: $green
+		transition: all .3s linear 
+.soc-wrap-img-ft
+	transform: translateY(40px)
+	display: block
+	opacity: 0
+	transition: all .5s cubic-bezier(.37,.01,0,.98) .65s
+	// transition-delay: .25s
+	&.translateY
+		transform: translateY(0px)
+		opacity: 1
+	&:hover .soc-fill
+		fill: $green
+		transition: all .3s linear 
+.right-wrap
+	width: 50%
+	padding: 0 0 35px 14px
+
+	h2
+		color: $green
+		font-size: 36px
+		font-family: 'RobotoMono-Bold', sans-serif
+	h3
+		font-size: 24px
+		font-family: 'RobotoMono-Regular', sans-serif
+		margin: 0 auto 5px
+		color: $green
+	p.blue-txt
+		font-family: 'RobotoMono-Regular', sans-serif
+		color: $white
+		display: inline-block
+		background-color: $blue
+		padding: 0 10px
+		margin: 0 auto 20px
+		font-size: 18px
+	p
+		color: $white
+		padding: 45px 0px
+		font-family: 'IBMPlexMono-Medium', sans-serif
+		line-height: 30px
+		span
+			display: block
+//form on pages (not in modal)
+.recovery-pass-form
+	position: relative
+	max-width: 400px
+	width: 100%
+.form
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+	align-items: center
+	
+	&-no-acc,
+	&-already-acc
+		text-align: center
+		color: #999
+		width: 100%
+		font-family: 'IBMPlexMono-Medium', sans-serif
+		font-size: 14px
+
+		a
+			color: #fff
+			text-decoration: underline
+
+	&-title
+		font-family: 'RobotoMono-Bold', sans-serif
+		font-size: 36px
+		color: $green
+		width: 100%
+		text-align: center
+
+		& .title-decor-cross
+			position: relative
+			&:before,
+			&:after
+				display: block
+				content: ''
+				width: 7px
+				height: 7px
+				position: absolute
+				background: url(../img/svg/green_cross.svg) no-repeat center center / contain
+			&:after
+				left: 100%
+				top: 0
+			&:before
+				right: 105%
+				bottom: 0
+
+		&.recovery-pass-form-title
+			margin: 0 auto 50px
+
+			& .title-decor-cross:after
+				left: 18%
+			& .title-decor-cross:before
+				right: 188%
+				bottom: 100%
+				
+			&:after,
+			&:before
+				display: block
+				content: ''
+				position: absolute
+			&:after
+				background: url(../img/svg/two_white_wave.svg) no-repeat center center / contain
+				left: 94%
+				bottom: 97%	
+				width: 35px
+				height: 11px
+			&:before
+				background: url(../img/svg/white_wave.svg) no-repeat center center / contain
+				left: -10px
+				top: 30px
+				width: 25px
+				height: 7px
+				transform: rotate(90deg)
+
+
+	&-desc
+		font-family: 'IBMPlexMono-Medium', sans-serif
+		font-size: 18px
+		color: #fff
+		text-align: center
+		padding: 20px 0
+		line-height: 28px
+
+		&.auth-form-desc
+			max-width: 315px
+			margin: 0 auto
+
+	&-input
+		background: rgba(0,0,0, .5)
+		border-style: solid
+		border-width: 0 0 1px 0
+		border-color: transparent transparent #08ef85 transparent
+		margin: 10px 0 0
+		font-size: 18px
+		color: #fff
+		padding: 14px 5px
+		width: 100%
+		outline: none
+
+		&-row
+			width: 100%
+			display: flex
+			flex-wrap: wrap
+			margin: 0 auto 20px
+			max-width: 410px
+
+			& span
+				display: block
+				width: 100%
+
+			&.recovery-pass-input-row
+				max-width:
+
+		&-title
+			font-family: 'IBMPlexMono-Medium', sans-serif
+			font-size: 14px
+			color: #fff
+
+	&-submit
+		margin: 20px auto
+		text-align: center
+.forgot-password,
+.above
+	text-align: center
+	margin: 20px auto
+	width: 100%
+	color: #999
+	font-family: 'IBMPlexMono-Medium', sans-serif
+	line-height: normal
+	a
+		font-family: 'IBMPlexMono-Medium', sans-serif
+		font-size: 14px
+		color: #fff
+		text-decoration: underline
+
+// sign in page
+// sign up page
+.auth-page
+	flex-wrap: wrap
+	justify-content: center
+.back-link-wrap
+	width: 100%
+	text-align: left
+.back-link-inner
+	width: 90%
+	margin: 20px auto
+	a
+		font-family: 'RobotoMono-Regular', sans-serif
+		font-size: 18px
+		color: #fff
+		display: flex
+		justify-content: flex-start
+		align-items: center
+
+		svg
+			fill: rgba(255,255,255, .5)
+			width: 20px
+			margin: 0 5px 0
+
+.auth-form
+	border: 1px solid rgba(255,255,255, .1)
+	background: #191919
+	padding: 40px
+	max-width: 630px
+	width: 100%
+	position: relative 
+// @media all and (max-width: 667px)
+//   .auth-form
+//   	width: 95%
+
+//terms-of use page
+.terms-use-decor-cross-1
+	position: absolute
+	left: -15%
+	top: 200px
+	width: 25px
+.terms-use-decor-cross-2
+	position: absolute
+	right: -4.8%
+	top: -45px
+	width: 15px
+	opacity: .5
+	transform: rotate(45deg)
+.terms-use-decor-wave-2
+	position: absolute
+	right: -15%
+.terms-use-decor-cross-3
+	position: absolute
+	left: -5.2%
+	top: 25%
+	width: 25px
+	transform: rotate(45deg)
+	opacity: .5
+.terms-use-decor-cross-5
+	position: absolute
+	right: -4.8%
+	top: 100px
+	width: 15px
+.terms-use-decor-wave-5
+	position: absolute
+	left: -15%
+	top: 45%
+	transform: rotate(90deg)
+.terms-use-decor-cross-7
+	position: absolute
+	left: -4.8%
+	top: 45%
+
+.terms-of-use-page
+	flex-wrap: wrap
+.terms-of-use-title-decor-privce
+	position: absolute
+	right: 0%
+	top: 100%
+	display: block
+	width: 25px
+
+	img, svg
+		width: 100%
+.terms-use-decor-cross-5-privce
+	position: absolute
+	left: -5%
+	top: 139%
+	width: 20px
+.terms-use-decor-cross-4-privce
+	position: absolute
+	left: -5%
+	top: 50%
+	width: 20px
+	transform: rotate(45deg)
+	opacity: .5
+.terms-use-decor-cross-3-privce
+	position: absolute
+	right: -7%
+	top: 50%
+	width: 20px
+.terms-use-decor-cross-2-privce
+	position: absolute
+	right: -5%
+	top: 50%
+	width: 20px
+	transform: rotate(45deg)
+	opacity: .5
+.terms-use-decor-cross-1-privce
+	position: absolute
+	left: 1%
+	top: 20px
+	width: 20px
+.page
+
+	&-title
+		width: 100%
+		color: #00Ef7f
+		font-size: 30px
+		font-weight: bold
+		font-family: 'IBMPlexMono-Regular', sans-serif
+		text-transform: uppercase
+		text-align: center
+		margin: 20px auto
+		position: relative
+
+		& .terms-of-use-title-decor
+			position: absolute
+			left: 37%
+			bottom: 100%
+			display: block
+			width: 25px
+
+			img, svg
+				width: 100%
+
+	&-content
+		border: 1px solid rgba(255,255,255, .1)
+		background: #191919
+		padding: 40px
+	&-block
+		width: 100%
+		position: relative
+
+		&-title
+			color: #08ef85
+			font-family: 'IBMPlexMono-Regular', sans-serif
+			text-transform: uppercase
+			font-size: 24px
+			margin: 40px auto
+			width: 100%
+
+			&.tac
+				text-align: center
+		&-text
+			font-family: 'IBMPlexMono-Regular', sans-serif
+			font-size: 18px
+			color: #fff
+			line-height: 28px
+			margin: 0 auto 25px
+
+.statue-block
+	width: 100%
+	margin: 20px auto
+	text-align: center
+	display: flex
+	justify-content: center
+	&-img
+		position: relative
+		img
+			max-width: 100%
+		&:after
+			position: absolute
+			display: block
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			// border: 1px solid red
+			content: ''
+			background: url('../img/statue_lion2.png') no-repeat
+		&:before
+			position: absolute
+			display: block
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			// border: 1px solid red
+			content: ''
+			background: url('../img/statue_lion1.png') no-repeat
+		&-absolute
+			position: absolute
+			// top: 500px
+			// left: -100px
+// .statue-block-img3-70
+// 			&:after
+// 			position: absolute
+// 			display: block
+// 			top: 0
+// 			left: 0
+// 			width: 70%
+// 			height: 100%
+// 			// border: 1px solid red
+// 			content: ''
+// 			background: url('../img/statue_lion2.png') no-repeat
+// 		&:before
+// 			position: absolute
+// 			display: block
+// 			top: 0
+// 			left: 0
+// 			width: 70%
+// 			height: 100%
+.coinpayment-form
+	width: 100%
+	max-width: 372px
+.personal-buy-ticket-form-wrap-crypto form
+	text-align: center
+// site footer
+.site-footer
+	position: absolute
+	bottom: 27px
+	z-index: 10
+	&.last
+		display: block
+.footer-wrap
+	width: 100%
+	.nav-text
+		margin-left: 27px
+		a
+			font-family: 'IBMPlexMono-Regular', sans-serif
+			color: $white
+			margin: 0 25px 0 0
+			display: inline-block
+			position: relative
+			&:after
+				content: ''
+				width: 0%
+				display: block
+				margin: 0 auto
+				height: 2px
+				top: 50%
+				background-color: #fff
+				position: absolute
+				transition: all .2s linear
+				display: block
+			&:hover
+				&:after
+					width: 100%
+// decor-element
+.decor-wave-one
+	position: absolute
+	left: -17px
+	bottom: 20%
+	width: 30px
+	transform: rotate(90deg)
+	img
+		width: 100%
+.decor-wave-one-privce
+	position: absolute
+	left: -5%
+	bottom: 20%
+	width: 30px
+	transform: rotate(-90deg)
+	img
+		width: 100%
+.decor-wave-three-privce
+	position: absolute
+	right: -6%
+	bottom: 20%
+	width: 30px
+	transform: rotate(-90deg)
+	img
+		width: 100%
+.decor-wave-two
+	position: absolute
+	right: -12px
+	top: 6%
+	width: 30px
+	img
+		width: 100%
+.soc-wrap-modal
+	opacity: 1
+////////////////////////////////////////////////
+.nav
+	height: 100%
+	// max-height: 100%
+	width: 100%
+	max-width: 380px
+	background-color: rgba(26, 25, 25, .9)
+	position: fixed
+	top: 0
+	right: 0
+	opacity: 0
+	visibility: hidden
+	transition: all .5s linear 
+	&.active
+		opacity: 1
+		visibility: visible
+.nav-mob-btn
+	display: flex
+	flex-direction: column
+	justify-content: center
+	height: 75%
+.header-nav-mob-btn
+	margin: 0 0 30px 0
+	display: block
+.header-nav-mob-btn-a
+	display: inline-block
+	text-align: center
+.header-nav-mob-btn-use-parent
+	display: flex
+	justify-content: center
+	align-items: cenetr
+.mob-close-spans
+	position: relative
+	margin: 20px 0 0 10px
+	left: 0
+	top: 0
+	width: 100%
+	max-width: 40px
+	height: 100%
+	max-height: 40px
+	display: flex
+	justify-content: space-around
+	flex-direction: column
+.mob-close-span
+	width: 100%
+	transform: rotate(45deg)
+	height: 3px
+	background-color: #fff
+.mob-close-span:nth-child(1)
+	transform: rotate(-45deg)
+	position: absolute
+//////////////////////////////////////
+.about-us
+	padding: 100px 0
+	position: relative
+	&-white-croos1
+		position: absolute
+		left: 5%
+		top: 40%
+		transform: rotate(45deg)
+	&-white-croos2
+		position: absolute
+		right: 5%
+		top: 10%
+		transform: rotate(45deg)
+	&-green-croos
+		position: absolute
+		right: 50%
+		top: 15%
+		transform: rotate(45deg)
+	&-title
+		color: $green
+		font-family: 'RobotoMono-Bold' , sans-serif
+		font-size: $font36
+		margin: 0 0 35px
+	&-subtitle
+		font-family: 'RobotoMono-Bold' , sans-serif
+		font-size: $fz24
+		color: $white
+	&-items
+		display: flex
+		justify-content: space-between
+		&-item
+			width: 46%
+			color: $white
+			font-family: 'IBMPlexMono-Medium', sans-serif
+			font-size: $middleFont
+			&-info
+				margin: 25px 0 0
+				line-height: 1.7
+	&-team
+		padding: 90px 0 0
+		&-title
+			color: $white
+			font-size: $fz24
+			font-family: 'RobotoMono-Bold' , sans-serif
+			margin: 0 0 30px
+		&-items
+			display: flex
+			justify-content: space-between
+			&-item
+				display: flex
+				flex-direction: column
+				position: relative
+				width: 20%
+				img
+					max-width: 70%
+					height: auto
+				&-in
+					position: absolute
+					right: 33%
+					bottom: 28%
+					transform: scale(1.5)
+				&-fb
+					position: absolute
+					right: 20%
+					bottom: 28%
+					transform: scale(1.5)
+				&-tw
+					position: absolute
+					right: 5.5%
+					bottom: 28%
+					transform: scale(1.5)
+				&-name
+					font-size: $middleFont
+					font-family: 'RobotoMono-Bold' , sans-serif
+					// text-align: center
+					// width: 70%
+					padding: 20px 0 7px 0
+					color: $white
+				&-job
+					color: $white
+					font-family: 'IBMPlexMono-Medium', sans-serif
+				&-contact
+					color: $green
+					font-size: $font18
+					font-family: 'RobotoMono-Bold' , sans-serif
+					padding: 30px 0
+				&-text
+					color: $white
+					font-size: $font18
+					font-family: 'RobotoMono-Bold' , sans-serif
+				&-site
+					padding: 0 0 25px
+
+////////////////////////////////////////////////
+.personal__ticket
+	display: flex
+	justify-content: center
+	margin: 0 0 45px
+	flex-wrap: wrap
+.personal__ticket__price
+	width: 45%
+	margin: 0 1% 0
+	padding: 20px
+.personal__ticket__price__title
+	font-family: 'IBMPlexMono-Regular', sans-serif
+	font-size: $x-largeFont
+	color: $white
+	display: flex
+	width: 75%
+	margin: auto 0 auto auto
+.personal__ticket__price__payment
+	line-height: normal
+	color: $green
+	font-size: $xxx-largeFont
+	display: flex
+	justify-content: center
+	font-family: 'RobotoMono-Bold' , sans-serif
+.personal__ticket__price__payment__span
+	font-size: $font36
+	color: $boldGrey
+	line-height: normal
+	margin: auto 0 0 7px
+	position: relative
+	padding: 0 7px
+	&::after
+	  position: absolute
+	  content: ''
+	  width: 100%
+	  height: 3px
+	  background: #626262
+	  left: 0
+	  top: 50%
+.personal__ticket__counter
+	width: 50%
+	display: flex
+	flex-wrap: wrap
+	border: 1px solid $black
+	background-color: #181818
+	padding: 20px
+.personal__ticket__counter__title
+	width: 90%
+	font-family: 'IBMPlexMono-Regular', sans-serif
+	font-size: $x-largeFont
+	color: $white
+	display: flex
+	justify-content: center
+	magin: 0 auto
+.personal__ticket__counter__count
+	width: 100%
+	display: flex
+	justify-content: space-around
+.personal__ticket__counter__count__item
+	width: 33%
+	text-align: center
+	line-height: normal
+	font-family: 'IBMPlexMono-Bold', sans-serif
+	font-size: $font36
+	color: $white
+	&:nth-child(2)
+		position: relative
+		&:after
+			content: ''
+			width: 1px
+			height: 70%
+			top: 15%
+			background-color: #626262 
+			position: absolute
+			left: 0
+		&:before
+			content: ''
+			width: 1px
+			height: 70%
+			top: 15%
+			background-color: #626262 
+			position: absolute
+			right: 0
+.personal__ticket__counter__count__item__span
+	font-size: $x-largeFont
+	color: $boldGrey
+.personal__btn
+	display: flex
+	justify-content: center
+	position: relative
+.personal__btn__cross__img
+	position: absolute
+	top: 200%
+	left: 0
+	display: flex
+	flex-direction: column
+	opacity: .3
+.personal__btn__cross__img img
+	margin: 10px
+.personal__btn__button
+	padding: 10px 23px
+	text-align: center
+	font-family: 'IBMPlexMono-Regular', sans-serif
+	margin: 0 10px
+	font-size: $x-largeFont
+	color: #a8a8a8
+	&.active
+		border-bottom: 4px solid $green
+		color: $green
+.header-contact
+	display: flex
+	justify-content: space-between
+	font-family: 'IBMPlexMono-Medium', sans-serif
+	font-size: $smallFont
+	color: $white
+	letter-spacing: 1px
+	align-items: center
+	max-width: 400px
+	width: 100%
+.header-logout
+	display: block
+	margin: 0 0 0 20px
+	width: 25px
+.decor-wave-two-personal
+  position: absolute
+  right: 07%
+  top: 25%
+  width: 30px
+.decor-wave-two-personal-down
+  position: absolute
+  right: 15%
+  bottom: 25%
+  width: 30px
+.personal-buy-ticket-form-wrap-crypto,
+.personal-buy-ticket-form-wrap-money
+	display: none
+.personal-buy-ticket-form-wrap
+	&.active
+		display: block
+.home
+	// background: url(../img/stub-bcg.jpg) no-repeat center/100% fixed
+	// background-repeat: no-repeat 
+	// background-position: center center
+	// background-size: 100% 100%
+	// background-attachment: fixed
+//////////////////////////////////////////////
+.what-is-img-2row-wave
+	position: absolute
+	bottom: 0%
+	left: -20%
+	opacity: 0
+	transition: all .5s linear .9s
+	&.bounseIn
+		opacity: 1
+.what-is
+	position: relative
+	&-img-green-cross10
+		position: absolute
+		left: 15%
+		top: 15%
+		opacity: 0
+		transform: rotate(45deg)
+		transition: all .5s linear .5s
+		&.bounseIn
+			opacity: 1
+	&-green-cross
+		position: absolute
+		bottom: 20%
+		right: 20%
+		transform: rotate(45deg)
+		opacity: 0
+		transition: all .5s linear .9s
+		&.bounseIn
+			opacity: 1
+	&-green-circle
+		position: absolute
+		top: 15%
+		right: 5%
+		opacity: 0
+		transition: all .5s linear .6s
+		&.bounseIn
+			opacity: 1
+	&-big-sircle
+		position: absolute
+		top: 16%
+		z-index: -1
+		opacity: 0
+		transition: all .5s linear .4s
+		&.bounseIn
+			opacity: 1
+	&-container
+		max-width: 1200px
+	&-content
+		display: flex
+		justify-content: space-between
+	&-img
+		width: 40%
+		position: relative
+		img
+			max-width: 100%
+			height: auto
+		&-statue
+			opacity: 0
+			transition: all .5s linear .2s
+			&.bounseIn
+				opacity: 1
+		&-wave4row
+			position: absolute
+			bottom: 25px
+			left: 15%
+			opacity: 0
+			transition: all .5s linear .7s
+			&.bounseIn
+				opacity: 1
+		&-green-cross1
+			position: absolute
+			top: 25%
+			right: 0
+			transform: rotate(45deg)
+			opacity: 0
+			transition: all .5s linear .8s
+			&.bounseIn
+				opacity: 1
+		&-green-cross2
+			position: absolute
+			top: 25%
+			left: 41%
+			opacity: 0
+			transition: all .5s linear .9s
+			&.bounseIn
+				opacity: 1
+		&-green-cross3
+			position: absolute
+			top: 47%
+			right: 29%
+			opacity: 0
+			transition: all .5s linear 1s
+			&.bounseIn
+				opacity: 1
+		&-green-cross4
+			position: absolute
+			top: 42%
+			right: 29%
+			opacity: 0
+			transition: all .5s linear 1.1s
+			&.bounseIn
+				opacity: 1
+		&-green-cross5
+			top: 33%
+			left: 52%
+			position: absolute
+			opacity: 0
+			transition: all .5s linear 1.2s
+			&.bounseIn
+				opacity: 1
+		&-green-cross6
+			position: absolute
+			bottom: 10%
+			right: 10%
+			transform: rotate(45deg)
+			opacity: 0
+			transition: all .5s linear 1.3s
+			&.bounseIn
+				opacity: 1
+		&-green-cross7
+			position: absolute
+			bottom: 10%
+			right: 10%
+			transform: rotate(45deg)
+			opacity: 0
+			transition: all .5s linear 1.3s
+			&.bounseIn
+				opacity: 1
+		&-green-cross1-mob
+			position: absolute
+			top: 10%
+			left: 10%
+			transform: rotate(45deg)
+			opacity: 0
+			transition: all .5s linear 
+		&-green-cross2-mob
+			position: absolute
+			bottom: 10%
+			left: 10%
+			transform: rotate(45deg)
+			opacity: 0
+			transition: all .5s linear 
+		&-white-points
+			position: absolute
+			right: 26%
+			bottom: 33%
+			transform: scale(1.6)
+			opacity: 0
+			transition: all .5s linear 1.4s
+			&.bounseIn
+				opacity: 1
+		&-green-circle1
+			position: absolute
+			right: 0%
+			top: 50%
+			opacity: 0
+			transition: all .5s linear 1.5s
+			&.bounseIn
+				opacity: 1
+		&-green-circle2
+			bottom: 12%
+			left: 35%
+			opacity: .7
+			transform: scale(.4)
+			opacity: .5
+			position: absolute
+			opacity: 0
+			transition: all .5s linear 1.6s
+			&.bounseIn
+				opacity: 1
+		&-green-circle3
+			top: 15%
+			right: 10%
+			transform: scale(.8)
+			opacity: .5
+			position: absolute
+			opacity: 0
+			filter: blur(3px)
+			transition: all .5s linear 1.6s
+			&.bounseIn
+				opacity: 1
+		&-white-circle
+			position: absolute
+			top: 52%
+			left: -20px
+			opacity: 0
+			filter: blur(1px)
+			transition: all .5s linear 1.7s
+			&.bounseIn
+				opacity: 1
+		&-white-lines
+			right: 16%
+			top: 14%
+			transform: rotate(-45deg)
+			position: absolute
+			opacity: 0
+			transition: all .5s linear 1.8s
+			&.bounseIn
+				opacity: 1
+		&-green-wave
+			position: absolute
+			bottom: 100px
+			right: 100px
+			opacity: 0
+			transition: all .5s linear 1.9s
+			transform: scale(1.6)
+			&.bounseIn
+				opacity: 1
+	&-desc
+		display: flex
+		flex-direction: column
+		width: 55%
+		&-title
+			color: $black
+			font-size: $font36
+			font-family: 'RobotoMono-Bold', sans-serif
+			margin: 35px 0 20px
+		&-info
+			font-family: 'IBMPlexMono-Regular', sans-serif
+			font-size: $middleFont
+			colot: #202020
+			opacity: 0.8
+			line-height: 1.7
+			span
+				display: block
+//////////////////////////////////////////////
+.meeting
+	position: relative
+.metting-green-points
+	position: absolute
+	bottom: 10%
+	right: 10%
+	z-index: 1
+	transform: scale(1.5)
+	opacity: 0
+	transition: all .5s linear .2s
+	&.bounseIn
+		opacity: 1
+.metting-green-lines
+	position: absolute
+	bottom: 45%
+	right: 2%
+	z-index: 1
+	transform: scale(1.5)
+	opacity: 0
+	transition: all .5s linear .3s
+	&.bounseIn
+		opacity: 1
+.metting-green-cross-dec
+	position: absolute
+	top: 30%
+	right: 30%
+	transform: rotate(45deg)
+	opacity: 0
+	transition: all .5s linear .4s
+	&.bounseIn
+		opacity: 1
+.metting-green-cross-dec1
+	position: absolute
+	bottom: 25%
+	right: 25%
+	transform: rotate(45deg)
+	opacity: 0
+	transition: all .5s linear .5s
+	&.bounseIn
+		opacity: .5
+.metting-green-cross-dec2
+	position: absolute
+	top: 15%
+	right: 12%
+	transform: rotate(45deg)
+	opacity: 0
+	transition: all .5s linear .6s
+	&.bounseIn
+		opacity: .2
+.metting-white-wave-dec1
+	position: absolute
+	bottom: 27%
+	right: 20%
+	transform: scale(2)
+	z-index: 1
+	opacity: 0
+	transition: all .5s linear .7s
+	&.bounseIn
+		opacity: 1
+	// border: 1px solid red
+.metting-black-wave-dec
+	position: absolute
+	bottom: 28%
+	right: 20.7%
+	transform: scale(2)
+	z-index: 1
+	opacity: 0
+	transition: all .5s linear .8s
+	&.bounseIn
+		opacity: 1
+.metting-black-wave-dec2
+	position: absolute
+	bottom: 40%
+	right: 45%
+	transform: scale(2)
+	z-index: 1
+	opacity: 0
+	transition: all .5s linear .9s
+	&.bounseIn
+		opacity: 1
+	// border: 1px solid red
+// .meeting-img
+// 	position: absolute
+// 	bottom: 0
+// 	right: 0
+// 	max-width: 580px
+// 	width: 100%
+// 	height: auto
+.meeting-container
+	max-width: 1300px
+.meeting-info
+	width: 60%
+	padding: 0 0% 0 4%
+	position: relative
+.meeting-img
+	width: 30%
+	position: absolute
+	bottom: 0
+	height: 100%
+	right: 0
+	background: url('../img/meeting-img.png') no-repeat center bottom / contain
+	&:before
+		content: ''
+		width: 100%
+		height: 100%
+		bottom: 0
+		right: 0
+		background: url('../img/meeting-img.png') no-repeat center bottom / contain
+.meeting-info-title
+	color: transparent
+	font-size: $font36
+	font-family: 'IBMPlexMono-Bold', sans-serif
+	line-height: 1.3
+	letter-spacing: 1px
+	position: relative
+	&-absolute
+		position: absolute
+		top: 80%
+		left: -55px
+.text-animation
+	display: inline-block
+	color: transparent
+	position: relative
+	// color: $green
+	&:before
+		content: ''
+		color: $green
+		position: absolute
+		top: 50%
+		left: 50%
+		background: #0D182E
+		width: 0
+		height: 1.2em
+		// (-50%,-55%)
+		// -ms-transform: translate(-50%,-55%)
+		transform: translate(-50%,-55%)
+	&.state-1
+		&:before
+		 	width: 1px
+	&.state-2
+		&:before
+			width: .9em
+	&.state-3
+		color: $green
+		&:before
+			width: 0
+.meeting-info-boxes
+	display: flex
+	flex-wrap: wrap
+	margin: 70px 0 0
+.meeting-info-boxes-box
+	width: 45%
+	display: flex
+	opacity: 0
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	padding: 0 60px
+	text-align: center
+	margin: 0 0 55px
+.meeting-info-absolute
+	position: absolute
+	bottom: -14px
+	left: 53px
+	display: flex
+	justify-content: space-between
+	max-width: 75px
+	width: 100%
+	&-img
+		transform: rotate(-45deg)
+		opacity: 0
+		transition: all .5s linear .3s
+		&.bounseIn
+			opacity: 1
+		&:nth-child(2)
+			transition: all .5s linear .4s
+		&:nth-child(3)
+			transition: all .5s linear .5s
+.meeting-info-boxes-box-num
+	color: $green
+	font-size: $font50
+	padding: 0 0 14px
+	font-family: 'IBMPlexMono-Regular', sans-serif
+.meeting-info-boxes-box-text
+	color: $black
+	font-size: $font18
+	font-family: 'RobotoMono-Regular', sans-serif
+.meeting-info-title-mob
+	display: none
+//////////////////////////////////////////////
+// .speakers
+// 	padding: 100px 0
+// 	// display: flex
+// 	// align-items: center
+.speakers-content
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	position: relative
+.speakers-white-row
+	position: absolute
+	right: 10%
+	bottom: 50%
+	opacity: 0
+	transition: all .5s linear .2s
+	&.bounseIn
+		opacity: 1
+	// transform: rotate(45deg)
+.speakers-title
+	color: transparent
+	font-size: $font36
+	font-family: 'RobotoMono-Bold', sans-serif
+	line-height: 1.3
+	letter-spacing: .9px
+	width: 100%
+	display: block
+	text-align: center
+	margin: 0 auto
+	padding: 40px 0 0 
+// .speakers-green-font
+// 	color: black
+.speakers-title-mob
+	display: none
+.speakers
+	&.text-animation
+		display: inline-block
+		color: transparent
+		position: relative
+		// color: $green
+		&:before
+			content: ''
+			color: $green
+			position: absolute
+			top: 50%
+			left: 50%
+			background: #fff
+			width: 0
+			height: 1.2em
+			// (-50%,-55%)
+			// -ms-transform: translate(-50%,-55%)
+			transform: translate(-50%,-55%)
+		&.state-1
+			&:before
+			 	width: 1px
+		&.state-2
+			&:before
+				width: .9em
+		&.state-3
+			color: #fff
+			&:before
+				width: 0
+
+
+
+.speakers-slider
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-around
+	position: relative
+	opacity: 0
+	transition: all .5s linear .2s
+	&.bounseIn
+		opacity: 1
+	&-white-cross
+		position: absolute
+		bottom: 20px
+		left: 0
+		transform: rotate(-45deg)
+		opacity: 0
+		transition: all .5s linear .4s
+		&.bounseIn
+			opacity: 1
+	&-green-cross
+		position: absolute
+		top: 240px
+		left: 265px
+		transform: rotate(-45deg)
+		opacity: 0
+		transition: all .5s linear .5s
+		&.bounseIn
+			opacity: 1
+	&-green-cross1
+		position: absolute
+		top: 50px
+		right: 65px
+		opacity: .5
+		transform: rotate(-45deg)
+		opacity: 0
+		transition: all .5s linear .6s
+		&.bounseIn
+			opacity: 1
+	&-white-sc-cross
+		position: absolute
+		bottom: 130px
+		transform: rotate(-45deg)
+		right: 90px
+		opacity: 0
+		transition: all .5s linear .7s
+		&.bounseIn
+			opacity: 1
+.speakers-slider-item
+	width: 33%
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	margin: 20px 0
+	&.padding-right
+		padding: 0 0 0 120px
+	&.padding-left
+		padding: 0 120px 0 0
+.speakers-slider-item-img
+	position: relative
+.speakers-slider-item-img-soc
+	position: absolute
+	bottom: 2px
+	right: 10px
+.speakers-slider-item-name
+	color: $white
+	font-size: $middleFont
+	font-family: 'RobotoMono-Bold', sans-serif
+	padding: 15px 0 7px
+.speakers-slider-item-info
+	color: $white
+	font-size: $smallFont
+	font-family: 'IBMPlexMono-Regular', sans-serif
+// .fp-slidesNav
+// 	position: relative
+.fp-slidesNav.fp-bottom
+	bottom: 70px
+#fp-nav ul, .fp-slidesNav ul
+	width: 10%
+	margin: 0 auto
+	height: 10px
+#fp-nav ul li, 
+.fp-slidesNav ul li
+	width: 15%
+	margin: 0 10px 0
+#fp-nav ul li a span, 
+.fp-slidesNav ul li a span 
+	width: 100%
+	height: 10px
+	box-sizing: border-box
+	overflow: hidden
+	border-radius: 0
+	background-color: #00ef7f
+	opacity: .2
+#fp-nav ul li a span, .fp-slidesNav ul li a span
+	top: 0
+	left: 0
+	margin: 0
+#fp-nav ul li:hover a span, .fp-slidesNav ul li:hover a span
+	top: 0
+	left: 0
+	margin: 0
+	width: 100%
+#fp-nav ul li a.active span, 
+.fp-slidesNav ul li a.active span, 
+#fp-nav ul li:hover a.active span, 
+.fp-slidesNav ul li:hover a.active span
+	width: 150%
+	background-color: #00ef7f
+	opacity: 1
+	height: 10px
+	border-radius: 0
+	margin: 0 0 0 -6px
+/////////////////////////////////////////////
+.agenda-animation
+	opacity: 0
+	transition: all .5s linear 1s
+	&.bounseIn
+		opacity: 1
+.agenda
+	position: relative
+.agenda-container
+	max-width: 1300px
+.agenda-content
+	display: flex
+	flex-direction: column
+	justify-content: center
+	// padding: 100px 0 0
+.agenda-up-wrap
+	display: flex
+	flex-wrap: wrap
+	&.no-wrap
+		flex-wrap: nowrap
+.agenda-title
+	line-height: normal
+	color: transparent
+	font-size: $font36
+	font-family: 'RobotoMono-Bold', sans-serif
+	letter-spacing: 1px
+	position: relative
+	width: 100%
+	transition: all .5s linear
+	&.no-wrap
+		width: auto
+.agenda-title-mob
+	display: none
+	line-height: normal
+	color: $green
+	font-size: $font36
+	font-family: 'RobotoMono-Bold', sans-serif
+	letter-spacing: 1px
+	position: relative
+	text-align: center
+	width: 100%
+.agenda-green-cross
+	position: absolute
+	left: 250px
+	top: 0px
+	transform: rotate(45deg)
+.agenda-green-cross1
+	position: absolute
+	left: 200px
+	bottom: 200px
+	z-index: 10
+	transform: rotate(45deg)
+.agenda-btn
+	margin: 50px auto 67px
+	border: 1px solid $green
+	transition: all .5s linear
+	&.no-wrap
+		margin: 0 0 60px auto
+		border: none
+		width: auto
+.agenda-btn-item
+	padding: 20px 60px
+	font-size: $font18
+	font-family: 'RobotoMono-Bold', sans-serif
+	transition: all .5s linear
+	border: 3px solid transparent
+	&.no-wrap
+		padding: 0 0 10px 0
+		margin: 0 10px
+		line-height: noraml
+	&.active
+		background-color: $green
+.agenda-btn.no-wrap .active
+	background-color: transparent
+	border-bottom: 3px solid $green
+.scrollbar-inner > .scroll-element .scroll-bar
+	background-color: $green
+.agenda-info-wrap
+	overflow: hidden
+	height: 450px
+	transition: all .5s linear
+	position: relative
+	&-line
+		position: absolute
+		display: block
+		top: 0
+		left: 20%
+		content: ''
+		width: 2px
+		height: 100%
+		display: block
+		background: linear-gradient(to bottom, #5c7bf7 32%, white 31%, white 100%)
+		transition: all .1s linear
+		opacity: 1
+		&.op0
+			opacity: 0
+	&.no-wrap
+		height: 600px
+	&-opacite
+		position: absolute
+		bottom: 43px
+		left: 0
+		width: 100%
+		height: 15%
+		z-index: 10
+		background: linear-gradient(to top, rgba(255,255,255,1) 65%,rgba(255,255,255,0) 100%)
+		opacity: 0
+		transition: all .5s linear 1s
+		&.bounseIn
+			opacity: 1
+		&.no-wrap
+			background: none
+.agenda-info
+	display: none
+	flex-direction: column
+	width: 77%
+	margin: 0 auto
+	position: relative
+	&-row
+		display: flex
+		&-block
+			&-subtitle
+				display: none
+				margin: 10px 0
+				&.active
+					display: block
+			&-time
+				color: $green
+				width: 20%
+				font-size: $font18
+				font-family: 'IBMPlexMono-Regular', sans-serif
+				position: relative
+				&-sircle
+					position: absolute
+					right: -11px
+					top: 0
+					content: ''
+					background-color: #fff
+					width: 20px 
+					height: 20px
+					z-index: 100
+					border: 1px solid $green
+					border-radius: 100%
+					transition: border .1s linear
+					&.active
+						border: 5px solid $green
+			&-text
+				position: relative
+				// border-left: 2px solid rgba(8, 239, 133, .4)
+				width: 80%
+				padding: 0 0 39px 50px
+				font-size: $font18
+				position: relative
+				font-family: 'RobotoMono-Bold', sans-serif
+					// background-image: url('../img/favicon/favicon-16x16.png')
+				&-last
+					padding: 0 0 0 50px
+				&-person
+					display: flex
+					flex-direction: column
+					&-img
+						margin: 0px 0 30px
+						img
+							max-width: 1005
+							height: auto
+					&-name
+						color: $black
+						font-size: $font18
+						font-family: 'RobotoMono-Bold', sans-serif
+					&-jop
+						color: $green
+						font-size: $font18
+						font-family: 'RobotoMono-Bold', sans-serif
+						margin: 15px 0 30px
+					&-info
+						font-size: $middleFont
+						font-family: IBMPlexMono-Regular, sans-serif
+.agenda-info-btn
+	margin: 50px 0 50px 28%
+//////////////////////////////////////////////
+.cards
+	display: flex
+	justify-content: space-between
+	&-item
+		width: 30.5%
+		// background: $black
+		// padding: 28px 20px 35px 23px
+		position: relative
+		transition: background .5s linear
+		perspective: 1000px
+		opacity: 0
+		transition: all .5s linear
+		&.cards-item-op-animation
+			opacity: 1
+		&:before
+			// display: block
+			width: 100%
+			height: 95%
+			content: ''
+			background-color: $green
+			position: absolute
+			top: 0
+			left: 0
+			z-index: -1
+			transform: rotate(0deg)
+			transition: transform 1s linear 1s
+		&-wrap
+			overflow: hidden
+			width: 100%
+			padding: 28px 20px 35px 23px
+			height: 100%
+			position: relative
+			background: $black
+.cards-before-animation
+	&:before
+		transform: rotate(-5deg)
+		transition: transform 1s linear 1s
+.card
+	&-title
+		color: $green
+		font-size: $fz24
+		font-family:  'RobotoMono-Bold', sans-serif
+		text-align: center
+		z-index: 2
+		position: relative
+
+	&-img
+		text-align: center
+		padding: 15px 0
+		position: relative
+		z-index: 2
+		border-bottom: 1px solid #232121
+	&-desc
+		color: $white
+		font-size: $smallFont
+		position: relative
+		font-family: 'RobotoMono-Regular', sans-serif
+		line-height: 1.7
+		z-index: 2
+		margin: 15px 0 50px
+	&-list
+		position: relative
+		z-index: 2
+		li 
+			font-family: 'IBMPlexMono-Regular', sans-serif
+			font-size: $smallFont
+			color: $white
+			margin: 10px 0 0 0
+			&:before
+				display: inline-block
+				width: 8px 
+				height: 8px
+				background-color: $green
+				content: ''
+				border-radius: 100%
+				margin: 0 10px 0 0
+.cards-white-wave
+	position: absolute
+	bottom: 100px
+	left: 90px
+	transform: rotate(-45deg)
+	opacity: 0
+	transition: all .5s linear 1.1s
+	&.cards-img-op-animation
+		opacity: 1
+.cards-white-wave2
+	position: absolute
+	bottom: 200px
+	right: 37%
+	transform: rotate(-45deg)
+	opacity: 0
+	transition: all .5s linear 1.2s
+	&.cards-img-op-animation
+		opacity: 1
+.cards-white-wave3
+	position: absolute
+	top: 50%
+	left: 40%
+	transform: rotate(-45deg)
+	opacity: 0
+	transition: all .5s linear 1.3s
+	&.cards-img-op-animation
+		opacity: 1
+.cards-plus-green
+	position: absolute
+	top: 20%
+	right: 30%
+	transform: rotate(-45deg)
+	opacity: 0
+	transition: all .5s linear 1.4s
+	&.cards-img-op-animation
+		opacity: .5
+.cards-plus-green2
+	position: absolute
+	top: 40%
+	right: 40%
+	transform: rotate(-45deg) scale(1.5)
+	opacity: 0
+	transition: all .5s linear 1.5s
+	&.cards-img-op-animation
+		opacity: .5
+.cards-plus-white
+	position: absolute
+	bottom: 20%
+	right: 20%
+	transform: rotate(-45deg)
+	opacity: 0
+	transition: all .5s linear 1.6s
+	&.cards-img-op-animation
+		opacity: 1
+.cards-circle
+	position: absolute
+	top: 40%
+	right: 10%
+	opacity: .5
+	opacity: 0
+	transition: all .5s linear 1.7s
+	&.cards-img-op-animation
+		opacity: .5
+//////////////////////////////////////////////////
+.sponsors-title-mob
+	position: relative
+	font-family: 'RobotoMono-Bold', sans-serif
+	font-size: $font36
+	color: $green
+	display: none
+	text-align: center
+	margin: 0 0 20px 0
+.sponsors
+	position: relative
+	&-title
+		display: flex
+		position: relative
+		flex-direction: space-between
+		width: 100%
+		padding: 40px 0 0 0 
+		&-info
+			font-family: 'RobotoMono-Bold', sans-serif
+			font-size: $font36
+			color: transparent
+			width: 50%
+			display: none
+		&-btns
+			width: 50%
+			display: flex
+			justify-content: flex-end
+			opacity: 0
+			transition: all .5s linear .5s
+			&.active
+				opacity: 1
+	&-btn
+		color: $black
+		font-size: $font18
+		font-family: 'IBMPlexMono-Regular', sans-serif
+		padding: 5px
+		margin: 0 0 0 35px
+		transition: all .5s linear
+		border-bottom: 2px solid transparent
+		&.active
+			color: $green
+			border-bottom: 2px solid $green
+	&-slide
+		display: flex
+		justify-content: center
+		flex-wrap: wrap
+		opacity: 0
+		transition: all .5s linear .7s
+		&.sponsers-op-animation
+			opacity: 1
+		&-item
+			width: 17%
+			margin: 1%
+			// transform: translate3d(300px,300px,300px) scale(2)
+			// display: inline-block
+			transition: all .5s linear
+			cursor: pointer
+			&.active
+				// transform: translate3d(0px,0px,0px) scale(1)
+.mediapartner-slide
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	max-width: 100%
+.mediapartner-slide-item
+	width: 20%
+.mediapartner-slide-item
+	// width: 180px
+	width: 48%
+	margin: 0 auto
+	// margin: 1%
+.sponsors .fp-slidesNav.fp-bottom
+	display: none
+.sponsors-green-cross1
+	position: absolute
+	bottom: 300px
+	left: 200px
+	transform: rotate(45deg)
+	transition: all .5s linear 1.2s
+	opacity: 0
+	&.sponsers-op-animation
+		opacity: 1
+.sponsors-green-cross2
+	position: absolute
+	top: 100px
+	left: -50px
+	transform: rotate(45deg) scale(.6)
+	transition: all .5s linear 1s
+	opacity: 0
+	&.sponsers-op-animation
+		opacity: 1
+.sponsors-green-cross3
+	position: absolute
+	top: 100px
+	transform: rotate(45deg)
+	transition: all .5s linear 1.4s
+	opacity: 0
+	right: 300px
+	&.sponsers-op-animation
+		opacity: 1
+.sponsors-rows
+	position: absolute
+	right: 100px
+	bottom: 0%
+	transform: rotate(90deg)
+	transition: all .5s linear 1.5s
+	opacity: 0
+	&.sponsers-op-animation
+		opacity: 1
+.sponsors-slide-wrap
+	display: none
+	position: relative
+	&.active
+		display: block
+.sponsors-media-wrap
+	display: none
+	&.active
+		display: block
+		margin: 20% 0 0
+		width: 100%
+
+.sponsors-media-wrap.owl-carousel.owl-loaded
+	display: none
+	&.active
+		display: block
+.mediapartner-title
+	font-family: 'RobotoMono-Bold', sans-serif
+	color: $green
+	width: 50%
+	font-size: 36px
+	display: none
+.sponsors-slide-wrap-absolute
+	position: absolute
+	top: 100px
+	display: flex
+	justify-content: space-between
+	width: 50%
+	align-items: center
+	z-index: 100
+	opacity: 0
+	transition: all .5s linear .5s
+	&.active
+		opacity: 1
+.sponsors-slide-wrap-absolute-name
+	font-family: 'RobotoMono-Regular', sans-serif
+	font-size: 22px
+	color: #cbcbcb
+	cursor: pointer
+	&.active
+		color: $black
+		transition: all .5s linear
+
+.sponsors-slide-wrap-absolute-item
+	display: flex
+	align-items: center
+	justify-content: center
+	width: 30%
+	img
+		opacity: 0
+		visibility: hidden
+		margin: 0 10px
+		transform: scale(1.4)
+.sponsors-slide-wrap-absolute-item.active
+	img
+		opacity: 1
+		visibility: visible
+		transition: all .5s linear
+.sponsors-slide-wrap-absolute-line
+	height: 2px
+	width: 10%
+	dipslay: inline-block
+.sponsors-slide-wrap-absolute-lineaftergold
+	background-color: #ffe29c
+.sponsors-slide-wrap-absolute-lineaftersilver
+	background-color: #f1f1f1
+.sponsors-media-wrap .owl-dots
+	display: flex
+	width: 100%
+	margin: 0 auto
+	justify-content: center
+	margin: 100px 0 0
+.sponsors-media-wrap .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot
+	width: 30px
+	height: 5px
+	background-color: $green
+	margin: 0 10px
+	opacity: .4
+.sponsors-media-wrap .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot.active
+	opacity: 1
+//////////////////////////////////////////////////
+.media-title-mob
+	color: $green
+	font-size: $font36
+	font-family: 'RobotoMono-Bold', sans-serif
+	text-align: center
+	padding: 20px
+	width: 100%
+	display: none
+.media
+	position: relative
+	&-title
+		color: transparent
+		font-size: $font36
+		font-family: 'RobotoMono-Bold', sans-serif
+		text-align: center
+		padding: 50px 0  0
+	&-slide
+		display: flex
+		flex-wrap: wrap
+		opacity: 0
+		transition: all .5s linear 1s
+		&.media-slide-op
+			opacity: 1
+		&-item
+			// width: 30%
+			margin: 0% 1% 13%
+			text-align: center
+			filter: grayscale(100%)
+			&:hover
+				filter: grayscale(0)
+			img, svg
+				max-width: 400px
+				width: 100%
+				height: 100%
+				max-height: 80px
+
+.media-white-cross1
+	position: absolute
+	top: 135px
+	right: 30%
+	transform: rotate(45deg)
+	opacity: 0
+	transition: all .5s linear 1s
+	&.media-img-op-animation
+		opacity: .3
+.media-white-cross2
+	position: absolute
+	top: 170px
+	left: 28%
+	transform: rotate(45deg) scale(.7)
+	opacity: 0
+	transition: all .5s linear 1.5s
+	&.media-img-op-animation
+		opacity: 1
+.media-white-cross3
+	top: 73%
+	left: 15%
+	position: absolute
+	transform: rotate(45deg)
+	opacity: 0
+	transition: all .5s linear 1.4s
+	&.media-img-op-animation
+		opacity: .3
+.media-green-cross1
+	position: absolute
+	right: 60px
+	top: 50%
+	opacity: 0
+	transition: all .5s linear 1.1s
+	&.media-img-op-animation
+		opacity: 1
+.media-green-cross2
+	position: absolute
+	right: 60px
+	top: 54%
+	opacity: 0
+	transition: all .5s linear 1.2s
+	&.media-img-op-animation
+		opacity: 1
+.media-green-cross3
+	position: absolute
+	bottom: 22%
+	right: 30%
+	opacity: 0
+	transition: all .5s linear 1.3s
+	&.media-img-op-animation
+		opacity: 1
+	///////////////////////////////////////////////
+.contact-right-img
+	position: absolute
+	width: 100%
+	height: 100%
+	top: 0
+	z-index: -1
+	left: 0px
+.content-house
+	max-width: 100%
+.contact
+	position: relative
+	&-items
+		display: flex
+		justify-content: space-between
+	&-right
+		width: 60%
+		position: relative
+	&-left
+		width: 40%
+		display: flex
+		justify-content: center
+		flex-direction: column
+	&-title
+		color: transparent
+		font-size: $font48
+		font-family: 'RobotoMono-Bold', sans-serif
+		margin: 0 0 70px 0 
+	&-btn
+		width: 100%
+		max-width: 220px
+		height: 100%
+		max-height: 52px
+		background-color: $green
+		padding: 0
+		display: flex
+		justify-content: center
+		border: 1px solid transparent
+		transition: all .5s linear
+		span
+			width: 170px
+			display: flex
+			justify-content: center
+			align-items: center
+			color: $black
+			letter-spacing: .2px
+			font-family: 'IBMPlexMono-Regular', sans-serif
+			font-size: $middleFont
+			margin: auto 0
+		&:hover
+			background-color: transparent
+			border: 1px solid $green
+			span
+				color: $green
+		&-tg
+			width: 50px
+			height: 50px
+			background-color: #00cb68
+			display: flex
+			justify-content: center
+			border: 1px solid #00cb68
+.content-title-mob
+	display: none
+.slide-mob
+	display: none
+.site-footer
+	display: none
+.sponsors-slide-item
+	max-width: 100%
+	opacity: 0
+	transform: translate3d(30px,30px,30px) scale(1.5)
+	transition: all .5s linear 
+	&.active
+		opacity: 1
+		transform: translate3d(0px,0px,0px) scale(1)
+.content-absolute
+	position: absolute
+.content-big-sircle
+	top: 165px
+	transform: scale(6.5)
+	z-index: -1
+	left: 145px
+.content-white-sircle
+	top: 53%
+	transform: scale(.8)
+	left: 15px
+.content-longwave
+	bottom: 100px
+	transform: rotate(160deg) scale(1.4)
+	left: 20px
+	z-index: 1
+.content-cross-bottom
+	transform: rotate(45deg)
+	bottom: 80px
+	left: 90px
+.content-cross-right
+	top: 40px
+	right: 50px
+	transform: rotate(45deg)
+.content-white-wave
+	transform: scale(2.2)
+	bottom: 88px
+	left: 135px
+.content-white-wave1
+	bottom: 85px
+	transform: scale(2.2)
+	right: 200px
+.content-white-wave2
+	bottom: 75px
+	transform: scale(2.2)
+	right: 215px
+.content-green-sircle-right
+	right: 85px
+	top: 40px
+	z-index: -1
+	filter: blur(3px)
+
+.content-green-wave3
+	right: 60px
+	transform: scale(3.2) rotate(-45deg)
+	top: 160px
+.content-green-sircle
+	bottom: 100px
+	right: 8px
+	transform: scale(.7)
+/////////////////animation////////////////////////
+.info
+	transform: rotate3d(1,0,0, 90deg)
+	width: 100%
+	height: 100%
+	padding: 20px
+	position: absolute
+	top: 0
+	left: 0
+	border-radius: 4px
+	pointer-events: none
+	background-color: transparentize(#4c4c4c, .1)
+	z-index: 1
+
+.in-top .info 
+	transform-origin: 50% 0%
+	animation: in-top .3s ease 0ms 1 forwards
+
+.in-right .info 
+	transform-origin: 100% 0%
+	animation: in-right .3s ease 0ms 1 forwards
+
+.in-bottom .info 
+	transform-origin: 50% 100%
+	animation: in-bottom .3s ease 0ms 1 forwards
+
+.in-left .info 
+	transform-origin: 0% 0%
+	animation: in-left .3s ease 0ms 1 forwards
+
+
+.out-top .info 
+	transform-origin: 50% 0%
+	animation: out-top .3s ease 0ms 1 forwards
+
+.out-right .info 
+	transform-origin: 100% 50%
+	animation: out-right .3s ease 0ms 1 forwards
+
+.out-bottom .info 
+	transform-origin: 50% 100%
+	animation: out-bottom .3s ease 0ms 1 forwards
+
+.out-left .info 
+	transform-origin: 0% 0%
+	animation: out-left .3s ease 0ms 1 forwards
+
+
+@keyframes in-top 
+	from 
+		transform: rotate3d(-1,0,0, 90deg)
+	to   
+		transform: rotate3d(0,0,0, 0deg)
+@keyframes in-right 
+	from 
+		transform: rotate3d(0,-1,0, 90deg)
+	to   
+		transform: rotate3d(0,0,0, 0deg)
+@keyframes in-bottom 
+	from 
+		transform: rotate3d(1,0,0, 90deg)
+	to   
+		transform: rotate3d(0,0,0, 0deg)
+@keyframes in-left 
+	from 
+		transform: rotate3d(0,1,0, 90deg)
+	to   
+		transform: rotate3d(0,0,0, 0deg)
+
+@keyframes out-top 
+	from 
+		transform: rotate3d(0,0,0, 0deg)
+	to   
+		transform: rotate3d(-1,0,0, 104deg)
+@keyframes out-right 
+	from 
+		transform: rotate3d(0,0,0, 0deg)
+	to   
+		transform: rotate3d(0,-1,0, 104deg)
+@keyframes out-bottom 
+	from 
+		transform: rotate3d(0,0,0, 0deg)
+	to   
+		transform: rotate3d(1,0,0, 104deg)
+@keyframes out-left 
+	from 
+		transform: rotate3d(0,0,0, 0deg)
+	to   
+		transform: rotate3d(0,1,0, 104deg)
+
+
+
+/////////////////////////////////////////////
+.black-text
+	color: black
+.black-bg
+	background-color: #000
+.show
+	display: flex
+.hide
+	display: none
+.block
+	display: block
+.bg-effect
+	transition: background  .5s
+	&.static
+		// background: #000 url(../img/stub-bcg.jpg) no-repeat center center/100% 100% fixed
+		transition: background  .5s
+	// background-color: transparent
+	// background: url(../img/stub-bcg.jpg) no-repeat center center
+	// background-repeat: no-repeat 
+	// background-position: center center
+	// background-size: 100% 100%
+	// background-attachment: fixed
+	&.bg-white
+		background: #fff
+		transition: background .5s linear
+	&.bg-dark
+		transition: background .5s linear
+		background: #1b1a1b
+.body-static
+	width: 100%
+	height: 100%
+	position: fixed
+	bottom: 0
+	left: 0
+	z-index: -2
+	opacity: 0
+	transition: opacity 1s
+	img
+		max-width: 100%
+		width: 100%
+		height: 100%
+.bg-effect.static .body-static
+	// transition: opacity .5s
+	opacity: 1
+.logo-fill-class.white
+	fill: #000
+.logo-fill-class.black
+	fill: #fff
+.soc-fill.white
+	fill: #000
+.soc-fill.black
+	fill: #fff
+.meeting-info-title-color
+	color: transparent
+.meeting-info-title-color.text-animation.state-3
+	color: $black
+
+.b-carousel 
+	width: 100%
+	overflow: hidden
+	position: relative
+
+.b-carousel__prev,
+.b-carousel__next 
+	position: absolute
+	top: 50%
+	left: 20px
+	width: 50px
+	height: 50px
+	background: #fff
+	transform: translateY(-50%) translateZ(0)
+	cursor: pointer
+	text-indent: 100%
+	white-space: nowrap
+	overflow: hidden
+	z-index: 3
+	
+
+.b-carousel__next 
+	left: auto
+	right: 20px
+		
+
+.b-carousel__wrap 
+	display: flex
+	transition: transform .5s
+	will-change: transform
+	position: relative
+	z-index: 1
+	height: 100%
+	
+
+.b-carousel__item 
+	flex: 0 0 100%
+	overflow: hidden
+	display: flex
+	align-items: center
+	justify-content: center
+.media-item-slide
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	img
+		width: 100%
+		max-width: 181px
+		margin: 20px
+.slider__controls
+	position: absolute
+	bottom: 20%
+	left: 50%
+	transform: translate(-50%, -20%)
+.slider__btn
+	display: inline-block
+	width: 50px
+	height: 10px
+	background-color: $green
+	margin: 0 10px
+	opacity: .5
+	cursor: pointer
+.slider__btn--active
+	opacity: 1
+////////////////////////////////////////////
+// #sponsors #fp-nav ul, .fp-slidesNav ul
+// 	display: flex
+// 	width: 50%
+// 	justify-content: space-around
+// 	margin: 0
+// #sponsors #fp-nav ul li, .fp-slidesNav ul li
+// 	width: 2%
+// #sponsors .fp-slidesNav.fp-bottom
+// 	bottom: 0
+// 	top: 200px
+/////////////////////////////////////////////
+// .title-animate-white
+// 	position: relative
+// 	overflow: hidden
+// 	&:after
+// 		display: block
+// 		position: absolute
+// 		content: ''
+// 		top: 0
+// 		right: 0
+// 		width: 100%
+// 		height: 100%
+// 		background: linear-gradient(to left, rgba(255,255,255,1) 70%,rgba(255,255,255,.6) 100%)
+// 		animation: title-animate 2s linear 2s
+.title-animate-white
+
+	// position: relative
+	// overflow: hidden
+	// &:after
+	// 	display: block
+	// 	position: absolute
+	// 	content: ''
+	// 	top: 0
+	// 	right: 0px
+	// 	width: 0%
+	// 	height: 100%
+	// 	background: linear-gradient(to left, rgba(255,255,255,1) 70%,rgba(255,255,255,.6) 100%)
+	// 	animation: title-animate 1s cubic-bezier(.25, .46, .45, .94) .5s
+// @keyframes title-animate-white
+// 	0% 	
+// 		transform: translateX(0%)
+// 		width: 100%
+// 	100%
+// 		transform: translateX(100%)
+// 		width: 0
+.title-animate-black
+	// position: relative
+	// overflow: hidden
+	// &:after
+	// 	display: block
+	// 	position: absolute
+	// 	content: ''
+	// 	top: 0
+	// 	right: 0px
+	// 	width: 0%
+	// 	height: 100%
+	// 	background: linear-gradient(to left, rgba(27,26,27,1) 70%,rgba(27,26,27,.6) 100%)
+	// 	animation: title-animate 1s linear
+
+@keyframes title-animate
+	0% 	
+		width: 100%
+		transform: translateX(0%)
+	100%
+		transform: translateX(100%)
+		width: 0
+.op1
+	opacity: 1
+.fadeIn 
+	// animation-delay: 2s
+	// opacity: 1
+	animation: fadeIn 2.5s linear 1s
+	// opacity: 1
+@keyframes fadeIn
+	0% 	
+		opacity: 0
+  100% 
+		opacity: 1
+.content-house
+	opacity: 1
+	animation: house 3s infinite
+@keyframes house
+	0% 	
+		opacity: 1
+	5%
+		opacity: 0
+	10%
+		opacity: 1
+	15%
+		opacity: 0
+	50% 
+		opacity: 1
+	100%
+		opacity: 1
+// .translateY
+	// opacity: 0
+// 	display: flex
+// 	// transform: translate3d(0,0,0)
+// 	animation: translateY 1s linear 1.5s
+// 	animation-count: 1
+// @keyframes translateY
+// 	0%
+// 		transform: translate3d(0,200%,0)
+// 		opacity: 0
+// 	// 50%
+// 	// 	opacity: 0
+// 	100%
+// 		transform: translate3d(0,0,0)
+// 		opacity: 1
+// .animate-lines-solid
+// 	stroke-dasharray: 1000
+// 	stroke-dashoffset: 1000
+// 	animation-delay: 3s
+// 	animation: solidline 1s linear
+// @keyframes solidline
+// 	to
+// 		opacity: 0
+
+
+// .cards-item:hover
+// 	&:before
+// 		// transform: rotate(-5deg)
+// 		animation: switch .6s ease-in-out infinite
+
+// @keyframes switch
+// 	0%
+// 		transform: rotate(-5deg)
+// 	30%
+// 		transform: rotate(5deg)
+// 	60%
+// 		transform: rotate(0deg)
+// 	100%
+// 		transform: rotate(-5deg)
+
+
+
+.bounsIn
+	opacity: 	1
+	animation: bounsIn .5s linear
+@keyframes bounsIn
+	0%
+		transform: scale(0)
+	100% 	
+		transform: scale(1)
+//glitch
+.glitch
+	position: relative
+	background-repeat: no-repeat
+	background-size: contain
+	background-position: 0 0
+	&:before
+		display: block
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background-repeat: no-repeat
+		background-size: contain
+		background-position: 0 0
+		opacity: 0.5
+		animation: animate 5s infinite
+.glitch-meeting
+	background-repeat: no-repeat
+	background-size: contain
+	&:before
+		display: block
+		content: ''
+		position: absolute
+		bottom: 0
+		right: 0
+		width: 100%
+		height: 100%
+		background-repeat: no-repeat
+		background-size: contain
+		opacity: 0.5
+		animation: animate-meeting 5s infinite
+// .title-animate-black-d1
+// 	position: relative
+// 	overflow: hidden
+// 	opacity: 1
+// 	&:after
+// 		background: linear-gradient(to left, rgba(28,32,31,1) 70%,rgba(28,32,31,.6) 100%)
+// 		animation: title-animate 2s linear .2s
+// .title-animate-black-d2
+// 	position: relative
+// 	overflow: hidden
+// 	opacity: 1
+// 	&:after
+// 		background: linear-gradient(to left, rgba(28,32,31,1) 70%,rgba(28,32,31,.6) 100%)
+// 		animation: title-animate 2s linear .6s
+// .title-animate-black-d3
+// 	position: relative
+// 	overflow: hidden
+// 	opacity: 1
+// 	&:after
+// 		background: linear-gradient(to left, rgba(28,32,31,1) 70%,rgba(28,32,31,.6) 100%)
+// 		animation: title-animate 2s linear 1s
+// .title-animate-black-d4
+// 	position: relative
+// 	overflow: hidden
+// 	opacity: 1
+// 	&:after
+// 		background: linear-gradient(to left, rgba(28,32,31,1) 70%,rgba(28,32,31,.6) 100%)
+// 		animation: title-animate 2s linear 1.3s
+// .title-animate-black-d5
+// 	position: relative
+// 	overflow: hidden
+// 	opacity: 1
+// 	&:after
+// 		display: block
+// 		background: linear-gradient(to left, rgba(28,32,31,1) 70%,rgba(28,32,31,.6) 100%)
+// 		animation: title-animate 2s linear 1.5s
+// @keyframes title-animate
+// 	0% 	
+// 		width: 100%
+// 		transform: translateX(0%)
+// 	100%
+// 		transform: translateX(100%)
+// 		width: 0
+.statue-block-img-blue
+	// top: 500px
+	// animation-direction: alternate
+	// animation-delay: 10s
+	// animation: lionblue .9s infinite
+// @keyframes lionred
+// 	from
+		// transform: scale(1)
+	// 	opacity: 1
+	// 60%, 80%
+		// transform: scale(1)
+// 	80%, 100%
+// 			opacity: 	0
+// .statue-block-img-red
+	// top: 500px
+	// animation: lionred .9s infinite
+// @keyframes lionblue
+// 	from
+		// transform: scale(1)
+	// 	opacity: 1
+	// 0%, 20%
+		// transform: scale(1)
+	// 20%, 50%
+	// 	opacity: 	0
+@keyframes animate 
+	0% 
+		background-position: 0 0
+		filter: hue-rotate(0deg)
+
+	1% 
+		background-position: 4px 0
+
+	2% 
+		background-position: -4px 0
+
+	3% 
+		background-position: 12px 0
+
+	4% 
+		background-position: -16px 0
+
+	5% 
+		background-position: -24px 0
+
+	6% 
+		background-position: -52px 0
+
+	7% 
+		background-position: 0 22px
+
+	8% 
+		background-position: -40px -10px
+
+	9% 
+		background-position: 0 0
+		filter: hue-rotate(360deg)
+  
+  100% 
+		background-position: 0 0
+		filter: hue-rotate(360deg)
+
+@keyframes animate-meeting
+	0%
+		// filter: hue-rotate(0deg)
+
+	1% 
+		background-position: 4px 100%
+
+	2% 
+		background-position: -4px 100%
+
+	3% 
+		background-position: 12px 100%
+
+	4% 
+		background-position: -16px 100%
+
+	5% 
+		background-position: -24px 100%
+
+	6% 
+		background-position: -52px 100%
+
+	7% 
+		background-position: 0 100%
+
+	8% 
+		background-position: -40px 100%
+
+	9% 
+		background-position: 0 100%
+		// filter: hue-rotate(360deg)
+  
+  100% 
+		background-position: 0 100%
+		// filter: hue-rotate(360deg)
+.statue-block-img3
+	z-index: 1
+	animation: blink 2.5s cubic-bezier(0.25,.46,.45,.94) infinite both
+.statue-block-img:before
+	z-index: -1
+	animation: glitchbacho 2.5s cubic-bezier(0.25,.46,.45,.94) infinite both
+.statue-block-img:after
+	z-index: -2
+	animation: glitchbacho 2.5s cubic-bezier(0.25,.46,.45,.94) infinite both
+
+
+@keyframes glitchbacho
+	0%
+		transform: translate(0)
+		opacity: 1
+
+	5%
+		transform: translate(-2px,2px)
+		opacity: 1
+
+	10%
+	
+		transform: translate(-2px,-2px)
+		opacity: 0
+
+	15%
+		transform: translate(2px,2px)
+		opacity: 1
+
+	20%
+		transform: translate(2px,-2px)
+		opacity: 0
+	25%
+		transform: translate(0)
+		opacity: 1
+	26%
+		opacity: 0
+	to
+		
+		transform: translate(0)
+		opacity: 0
+
+
+
+@keyframes blink 
+	0% 
+		opacity: .8
+
+	5% 
+		opacity: .5
+
+	1% 
+		opacity: .8
+
+	15% 
+		opacity: .5
+
+	20% 
+		opacity: .8
+	25%
+		opacity: .5
+	26%
+		opacity: 1
+	to 
+		opacity: 1
+
+
+@keyframes glitch-op
+	0%
+		opacity: 1
+	7%
+		opacity: .1
+	9%
+		opacity: 1
+	100% 
+		opacity: 1
+@keyframes glitch-lion-blue
+	0% 
+		transform: translate(0)
+		opacity: 0
+	
+	1% 
+		transform: translate(-4px, 4px)
+		opacity: 0
+	
+	2% 
+		transform: translate(-4px, -4px)
+		opacity: .7
+	3%
+		transform: translate(4px, 2px)
+		opacity: .7
+
+	4% 
+		transform: translate(4px, 4px)
+		opacity: .7
+	5% 
+		transform: translate(4px, 2px)
+		opacity: .7
+	
+	6% 
+		transform: translate(4px, -4px)
+		opacity: .7
+	7%
+		transform: translate(2px, 5px)
+		opacity: .7
+	8%
+		transform: translate(0)
+		opacity: 0
+	100% 
+		transform: translate(0)
+		opacity: 0
+	// 0% 
+	// 	transform: translate(0)
+	// 	opacity: 0
+	
+	// 5% 
+	// 	transform: translate(-2px, 2px)
+	// 	opacity: 0
+	
+	// 10% 
+	// 	// transform: translate(-2px, -2px)
+	// 	// opacity: 0
+	
+	// 15% 
+	// 	transform: translate(2px, 2px)
+	// 	opacity: .7
+	
+	// 20% 
+	// 	transform: translate(2px, -2px)
+	// 	opacity: .7
+	// 25%
+	// 	transform: translate(-2px, 2px)
+	// 	opacity: 0
+	// 30%
+	// 	transform: translate(-2px, -2px)
+	// 	opacity: 0
+	// 35%
+	// 	transform: translate(2px, 2px)
+	// 	opacity: .7
+	// 40%
+	// 	transform: translate(2px, -2px)
+	// 	opacity: .7
+	// 50% 
+	// 	transform: translate(0)
+	// 	opacity: 0
+	// 100% 
+	// 	transform: translate(0)
+	// 	opacity: 0
+
+@keyframes glitch-lion-red
+	0% 
+		transform: translate(0)
+		opacity: .7
+	1%
+		transform: translate(-4px, 2px)
+		opacity: .7
+	
+	2% 
+		transform: translate(-4px, 4px)
+		opacity: .7
+	3% 
+		transform: translate(2px, 5px)
+		opacity: .7
+	4% 
+		transform: translate(-4px, -4px)
+		opacity: .7
+	5%
+		transform: translate(4px, 2px)
+		opacity: .7
+	6%
+		transform: translate(4px, -2px)
+		opacity: .7
+	7%
+		transform: translate(0)
+		opacity: 0
+	100% 
+		transform: translate(0)
+		opacity: 0
+	
+.delay2
+	transition: all .65s ease .2s
+.delay3
+	transition: all .65s ease .35s
+.delay4
+	transition: all .65s ease .5s
+.delay5
+	transition: all .65s ease .65s
+.delay6
+	transition: all .65s ease .79s
+.delay7
+	transition: all .65s ease .85s
+.delay8
+	transition: all .65s ease 1s
+.delay9
+	transition: all .65s ease 1.15s
+.delay10
+	transition: all .65s ease 1.3s
+.delay11
+	transition: all .65s ease 1.45s
+.delay12
+	transition: all .65s ease 1.6s
+
+@import "modal"
+.content-white-sircle,.content-cross-bottom,.content-white-wave,.content-white-wave1,.content-white-wave2,.content-green-wave3,.content-green-sircle
+	z-index: 2
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@media all and (min-width: 1366px)
+	html
+		height: 100%
+@media all and (width: 1366px) and (height: 1024px)
+	body.main-page
+		height: 100vh
+@media all and (width: 1024px) and (height: 1366px)
+	body.main-page
+		height: 100vh
+// iphone x, 9,8,7,6
+@media all and (width: 812px) and (height: 375px)
+	.site-footer
+		position: relative
+
+@media all and (width: 736px) and (height: 414px)
+	.site-footer
+		position: relative
+
+@media all and (width: 667px) and (height: 375px)
+	.site-footer
+		position: relative
+@media all and (min-width: 1600px) and (max-width: 1910px)
+	.speakers-title
+		padding: 30px 0 0 
+	.img-wrap-statue
+		height: 580px
+		width: 440px
+	.meeting-img
+		max-width: 450px
+	.agenda-info-wrap
+		height: 430px
+		transition: all .5s linear
+		&.no-wrap
+			height: 480px
+	.agenda-content
+		padding: 0px
+	.agenda-title
+		padding: 0 0 0 15px
+	.agenda-btn
+		margin: 30px auto 
+@media all and (min-width: 1366px) and (max-width: 1599px)
+	.main-content
+		padding: 0
+	.speakers-title
+		padding: 30px 0 0
+	.img-wrap-statue
+		height: 510px
+		width: 470px
+	.meeting-img
+		max-width: 320px
+	.agenda-info-wrap
+		height: 260px
+		transition: all .5s linear
+		&.no-wrap
+			height: 350px
+	.main-green-sicrle-decr
+		bottom: 0
+	.main-greenwhite-cross-decr
+		bottom: 0
+	.agenda-title
+		padding: 0 0 0 15px
+	.agenda-btn
+		margin: 0 auto 20px
+	.agenda-info-wrap
+		height: 375px
+		transition: all .5s linear
+		&.no-wrap
+			height: 390px
+	.agenda-content
+		padding: 30px 0
+	.agenda-btn-item
+		padding: 15px 40px 
+	.speakers-slider-item-img
+		img
+			max-width: 80%
+	.speakers-slider-item-img-soc
+		right: 29px
+		bottom: 1px
+	.sponsors-slide-wrap-absolute
+		top: 50px
+	.sponsors-media-wrap.active
+		margin: 5% 0 0
+@media all and (max-width: 1700px)
+	.main-green-points
+		bottom: 10%
+	.main-green-points
+		bottom: 12.5%
+	.main-white-wave4row1
+		left: 55%
+@media all and (max-width: 1399px)
+	.sponsors-slide-wrap-absolute
+		display: none
+	.sponsors-media-wrap.active
+		margin: 5% 0 0
+@media all and (max-width: 1365px)
+	.agenda-info-wrap-opacite
+		bottom: 0
+	.header-wrap .nav-text .header-nav-btn
+		margin: 0 5px
+	.header-btn-index
+		margin: 0 60px 0  0
+	.what-is-container
+		max-width: 960px
+	.meeting-img
+		max-width: 320px
+	#fp-nav ul, .fp-slidesNav ul
+		width: 15%
+	.cards
+		justify-content: space-around
+@media all and (max-width: 1100px)
+	.media-slide-item
+		margin: 1% auto
+@media all and (max-width: 1024px)
+	.media-slide-item
+		width: 45%
+		height: auto
+	.contact-right-img
+		display: none
+	.content-house
+		opacity: 1
+		animation: none
+	.content-title-mob
+		display: block
+		font-size: $font36
+		font-family: 'RobotoMono-Bold', sans-serif
+		text-align: center
+		padding: 50px 0  
+		color: $green
+	.content-big-sircle
+		top: 100px
+		transform: scale(5)
+	.contact-title	
+		font-size: 36px
+	.sponsors-slide-item
+		width: 30%
+	.block-mob
+		display: block
+	.header-index
+		background-color: rgba(26,25,25,.9)
+	.what-is-img-green-wave
+		bottom: 150px
+	.what-is-img-green-circle3
+		top: -2%
+	// .header-nav-mob-btn
+	// 	margin: 0 auto 30px
+	// 	width: 50%
+	.main-green-sicrle-decr
+		bottom: 10%
+		left: 75%
+	.main-white-wave4row1
+		bottom: 10%
+	.main-green-points
+		bottom: 6%
+	.main-white-wave4row
+		bottom: 25%
+		left: 35%
+	.media-title
+		display: none
+	.media-title-mob
+		display: block
+	.agenda-title
+		display: none
+	.agenda-title-mob
+		display: block
+	.sponsors-title-info
+		display: none
+	.site-footer
+		display: block
+	.fidex-footer-section
+		display: none
+	.speakers-slider-item-info
+		text-align: center
+	.what-is, .meeting, .agenda, .sponsors
+		background-color: #fff
+	.media-white-cross2
+		display: none
+	.contact-left
+		width: 100%
+		align-items: center
+	.agenda-info-btn
+		position: relative
+	.agenda-info-wrap-line
+		left: 33%
+	.meeting-img
+		right: -120px
+	.meeting-info-boxes-box
+		padding: 0
+	.meeting-container
+		overflow: hidden
+		position: relative
+	.agenda-info-row-block-time
+		width: 33%
+	.agenda-info-row-block-text
+		padding: 0 0 39px 30px
+		width: 67%
+	.agenda-info-row-block-text-last
+		padding: 0 0 0 30px
+	.sponsors-rows
+		display: none
+	.contact-items
+		flex-direction: column
+		align-items: center
+	.contact-right
+		margin: 85px 0 0 
+	.contact-btn
+		margin: 0 auto
+	.cards
+		flex-direction: column
+		align-items: center
+	.cards-item
+		margin: 0 0 60px  
+	.cards-item
+		width: 45%
+	.agenda
+		margin: 400px 0 0
+	.agenda-title
+		text-align: center
+	.speakers
+		.fp-slidesNav.fp-bottom
+			bottom: -350px
+	.speakers-slider-item
+		width: 50%
+	.speakers-title
+		.speakers-green-font
+			display: none
+		.speakers
+			display: none
+	.speakers-title-mob
+		display: block
+		color: $white
+		span
+			color: $green
+			display: block
+			padding: 0 0 20px 0
+	.meeting-info
+		padding: 0
+	.meeting-info-title-mob
+		display: block
+		color: $black
+		text-align: center
+		h4
+			display: inline-block
+			color: $green
+	.meeting-info-title
+		.meeting-info-title-color
+			display: none
+		.s 
+			display: none
+	.meeting-content
+		flex-direction: column
+	.what-is-content
+		flex-direction: column-reverse
+	.what-is-green-circle
+		top: 0
+	.hide-mob
+		display: none
+	.header-nav-btn
+		display: none
+	.header-nav-mob-btn
+		display: block
+	.header-nav-menu
+		display: flex
+	.decor-wave-two-personal
+		display: none
+	.decor-wave-two-personal-down
+		display: none
+	.personal__ticket__price__payment
+		justify-content: flex-start
+	.personal__ticket__price__title
+		width: 98%
+	.header-wrap .header-logo
+		z-index: 10
+	.img-wrap-statue
+		height: 540px
+	.personal__ticket__price
+		width: 100%
+		margin: 0 auto
+	.personal__ticket__counter
+		margin: 0 auto
+		width: 100%
+		text-align: center
+	.what-is-img-statue 
+		position: relative
+		z-index: 10
+		left: -30px
+	.what-is-big-sircle
+		z-index: 0
+		top: 20%
+		transform: scale(1.1)
+	.what-is-img-wave4row
+		bottom: 18px
+		left: 13%
+	.what-is-img-green-cross2, .what-is-img-wave4row, .what-is-img-green-cross4, .what-is-img-green-cross3, .what-is-img-green-cross5, .what-is-img-white-points, .what-is-img-green-circle2, .what-is-img-white-lines
+		z-index: 100
+	.what-is-img-green-cross1-mob
+		opacity: 1
+	.what-is-img-green-cross2-mob
+		opacity: 1
+	// .what-is-img-green-cross3,
+		// z-index: 100
+	.metting-black-wave-dec2
+		bottom: 40%
+	.speakers-slider-item.padding-left
+		padding: 0
+	.speakers-slider-item.padding-right
+		padding: 0
+	.sponsors-title-btns
+		width: 100%
+	.about-us-team-items-item-in
+		right: 27%
+		bottom: 30%
+	.about-us-team-items-item-fb
+		right: 9%
+		bottom: 30%
+	.about-us-team-items-item-tw
+		right: -11.5%
+		bottom: 29%
+	.content-white-sircle
+		top: 50%
+		left: 0
+		transform: scale(.6)
+	.content-longwave
+		bottom: 70px
+		transform: rotate(160deg) scale(1)
+		left: 0
+	.content-cross-bottom
+		bottom: 60px
+		left: 65px
+	.content-white-wave
+		bottom: 73px
+	.content-white-wave1
+		right: 85px
+		bottom: 65px
+	.content-white-wave2
+		right: 100px
+		bottom: 55px
+	.content-green-sircle-right
+		right: 33px
+		top: 15px
+	.content-green-wave3
+		right: 20px
+		top: 85px
+	.content-green-sircle
+		bottom: 65px
+		right: -15px
+	.content-cross-right
+		top: 15px
+		right: 5px
+		opacity: .6
+@media all and (max-width: 768px)
+	.sponsors-green-cross1
+		display: none
+	.metting-black-wave-dec2
+		bottom: 30%
+	.meeting-info-boxes-box
+		padding: 0
+		width: 50%
+	.what-is-desc
+		width: 85%
+	body.main-page
+		background-image: none
+		background-color: #000
+	.personal__btn__cross__img
+		display: none
+	.header-wrap
+		padding: 15px
+	.header-wrap .header-logo img
+		width: 90%
+	.header-wrap .nav-text .become-sponsor-link
+		padding: 10px 20px
+		display: block
+	.header-wrap .nav-text
+		// padding: 10px 20px
+		display: block
+	.btn-green-1
+		padding: 10px 25px
+	.main-content
+		flex-wrap: wrap
+		justify-content: center
+		padding: 50px 0 0
+	.right-wrap
+		order: 1
+		width: 100%
+		text-align: center
+	.img-wrap-statue
+		margin: 20px auto 0
+		order: 2
+		height: 400px
+		background-position: center
+		&:before
+			background-position: center
+	.back-link-wrap
+		display: none
+	.right-wrap
+		p.blue-txt
+			font-size: 16px
+	.form-desc
+		font-size: 16px
+	.form-input
+		font-size: 16px
+	.back-link-inner
+		a 
+			font-size: 16px
+	.page-block-text
+		font-size: 16px
+	.site-footer
+		position: relative
+	#fp-nav ul, .fp-slidesNav ul
+		width: 18%
+	.cards-item
+		width: 55%
+	.sponsors-title-btns
+		width: 70%
+	.main-white-wave4row
+		bottom: 35%
+	.main-green-points
+		bottom: 0
+	.footer-text
+		width: 100%
+	.about-us-team-items-item-in
+		transform: scale(1.1)
+		bottom: 39%
+		right: 27%
+	.about-us-team-items-item-fb
+		transform: scale(1.1)
+		bottom: 39%
+	.about-us-team-items-item-tw
+		transform: scale(1.1)
+		bottom: 39%
+	.contact-right img
+		transform: scale(1.3)
+	.content-green-wave3,
+	.content-white-wave2,
+	.content-white-wave1,
+	.content-white-wave,
+	.content-cross-bottom,
+	.content-longwave,
+	.content-white-sircle,
+	.content-green-sircle
+		z-index: 1
+	.content-big-sircle
+		top: 80px
+		left: 70px
+	.content-white-sircle
+		top: 55%
+		left: -60px
+	.content-longwave
+		bottom: 30px
+		left: -70px
+	.content-cross-bottom
+		bottom: 30px
+		left: 40px
+	.content-white-wave
+		bottom: 35px
+		left: 80px
+	.content-white-wave1
+		bottom: 25px
+	.content-white-wave2
+		bottom: 15px
+	.content-green-sircle
+		bottom: 25px
+		right: -75px
+	.content-green-sircle-right
+		right: -25px
+		top: -15px
+	.content-green-wave3
+		right: -40px
+		top: 60px
+	.content-cross-right
+		top: 0
+		right: -50px
+@media all and (max-width: 667px)
+	.slider__controls
+		width: 100%
+		position: static
+		transform: translate(0)
+		margin: 30px 0 0 0
+		width: 100%
+		display: flex
+		justify-content: space-around
+	.media-item-slide img
+		margin: 15px auto 0
+	.content-cross-right
+		right: -40px
+	.content-green-wave3
+		right: -10px
+	// .contact-right img
+	// 	transform: scale(1.3)
+	// .content-green-wave3,
+	// .content-green-sircle-right,
+	// .content-white-wave2,
+	// .content-white-wave1,
+	// .content-white-wave,
+	// .content-cross-right,
+	// .content-cross-bottom,
+	// .content-longwave,
+	// .content-white-sircle,
+	// .content-green-sircle
+	// 	z-index: 1
+	// 	transform: scale(1)
+	.content-big-sircle
+		// display: none
+	.about-us-items
+		flex-direction: column
+	.about-us-items-item
+		width: 100%
+	.about-us-team-items-item-in
+		bottom: 46%
+	.about-us-team-items-item-fb
+		bottom: 46%
+	.about-us-team-items-item-tw
+		bottom: 46%
+	.meeting-img
+		display: none
+	.header-nav-menu
+		position: static
+		margin: 0 0 0 auto
+	.media-white-cross3
+		left: 80%
+	.media .fp-slidesNav.fp-bottom
+		bottom: 0
+	.media-slide
+		justify-content: center
+	.media-slide-item
+		width: 51%
+	.metting-white-wave-dec1
+		display: none
+	.metting-green-cross-dec1
+		display: none
+	.slide-counter
+		display: none
+	.meeting-info
+		width: 100%
+	.cards-item
+		width: 60%
+	.terms-use-decor-wave-2
+		display: none
+	.auth-form
+		width: 92%
+		padding: 10px
+	.header-contact
+		margin: 10px auto
+	.personal__ticket__counter__count
+		// flex-direction: column
+		// align-items: center
+	.personal__ticket__counter__count__item
+		width: 100%
+		text-align: center
+	.personal__ticket__counter__count__item__data__min
+		width: 45px
+		max-width: 100%
+		display: inline-block
+	.personal__ticket__counter__count__item__span
+		width: 70px
+		display: block
+		margin: 0 auto
+	.personal__ticket__price__payment
+		flex-direction: column
+		span
+			width: 70%
+			margin: 0 auto
+			display: block 
+			text-align: center
+	.personal__ticket__price__title
+		width: 100%
+		display: block
+		text-align: center
+	.personal__btn__button
+		padding: 0
+		font-size: 20px
+	.personal__ticket__counter
+		padding: 10px
+	.personal__ticket__counter__title
+		width: 100%
+	.header-btn-index
+		display: none
+	.nav-text
+		margin: 0
+		width: 60%
+	#fp-nav ul, .fp-slidesNav ul
+		width: 22%
+	.agenda-info-row-block-text
+		width: 60%
+	.agenda-info-row-block-time
+		width: 40%
+	.agenda-info-wrap-line
+		left: 40%
+	.what-is-img
+		width: 65%
+	.footer-text
+		width: 100%
+	.content-big-sircle
+		top: 20px
+		left: 45px
+		transform: scale(3.5)
+	.content-green-sircle
+		right: -53px
+	.content-cross-right
+		right: -40px
+@media all and (max-width: 578px)
+	.media-green-cross3, .media-white-cross3, .media-white-cross1, .agenda-green-cross1
+		display: none
+	.sponsors-slide-item
+		width: 40%
+	.media .fp-slidesNav.fp-bottom
+		bottom: -30px
+	.about-us-team-items
+		flex-wrap: wrap
+	.about-us-team-items-item
+		width: 40%
+		margin: 0 0 30px 0
+	.about-us-team-items-item-in
+		bottom: 27%
+		transform: scale(1.5)
+		right: 32%
+	.about-us-team-items-item-fb
+		transform: scale(1.5)
+		bottom: 27%
+		right: 15%
+	.about-us-team-items-item-tw
+		transform: scale(1.5)
+		bottom: 27%
+		right: -3%
+	.header-nav-menu
+		position: absolute
+	.agenda
+		margin: 50px 0 0 
+	.speakers-slider-item
+		margin: 0 auto
+	.speakers
+		#fp-nav ul li, .fp-slidesNav ul li
+			margin: 5px 10px 0
+			width: 7%
+		#fp-nav ul, .fp-slidesNav ul
+			display: flex
+			justify-content: space-around
+			flex-wrap: wrap
+			width: 80%
+		.fp-slidesNav.fp-bottom
+			bottom: 0px
+	.slide-desk
+		display: none
+	.slide-mob
+		display: block
+	.sponsors-slide-item
+		margin: 10px
+	.header-nav-menu
+		right: 15px
+	.header-wrap
+		position: relative
+	.header-logout
+		position: absolute
+		right: 15px
+		top: 15px
+	.header-wrap
+		flex-wrap: wrap
+	.header-logo
+		width: 100%
+		text-align: center
+		margin: 0 auto 0  0
+	.header-wrap .nav-text
+		width: 100%
+		position: static
+	.main
+		padding: 0 0 20px
+	.main-content
+		padding: 0
+	.right-wrap p
+		padding: 20px 0
+		line-height: 20px
+	.img-wrap-statue
+		height: 300px
+		width: 260px
+	.soc-wrap
+		right: 7px
+	.site-footer
+		position: relative
+		bottom: 20px
+	.footer-wrap .nav-text
+		margin: 0 auto
+		padding: 0px 15px 0px
+	// privacy policy
+	.page-content
+		padding: 10px
+		width: 100%
+		word-break: break-word
+	.become-sponsor-link
+		margin: 0 auto 10px
+	.header-nav-btn
+		// margin: 0 auto 10px
+	#fp-nav ul, .fp-slidesNav ul
+		width: 23%
+	.agenda-btn-item
+		padding: 20px 25px
+	.agenda-info-row-block-text
+		width: 79%
+	.agenda-info-wrap-line
+		left: 21%
+	.agenda-info-row-block-time
+		width: 21%
+	.main-green-cross-decr
+		left: -60px
+	.main-white-wave4row
+		display: none
+	.main-green-points.bounseIn
+		display: none
+	.main-green-sicrle-decr
+		left: 85%
+	.main-white-wave4row1
+		bottom: 0
+@media all and (max-width: 480px)
+	.header-wrap
+		padding: 12px
+	.agenda-info
+		margin: 0 auto 0 30px
+	.main-white-wave4row1
+		left: 50%
+	.mediapartner-title
+		width: 97%
+		text-align: center
+		margin: 0 0 20px 0
+	.agenda-info-btn
+		margin: 50px 0 50px
+	.agenda-info-row-block-text
+		padding: 0 0 39px 15px
+		width: 66%
+	.agenda-info-row-block-time
+		width: 34%	
+	.sponsors-title
+		padding: 0
+		align-items: center
+		flex-direction: column
+	.sponsors-title-info
+		text-align: center
+		margin: 0 0 20px 0
+	.sponsors-title-btns
+		width: 80%
+		margin: 0 auto
+		justify-content: space-between
+	.sponsors-btn
+		margin: 0
+	#fp-nav ul, .fp-slidesNav ul
+		width: 35%
+	.contact-right
+		width: 80%
+	.contact-left
+		width: 80%
+	.cards-item-wrap
+		padding: 28px 15px
+	.cards-item
+		width: 90%
+	.agenda-info-wrap-line
+		left: 34%
+	.agenda-btn-item
+		padding: 20px 8px
+	.right-wrap p span
+		display: inline
+	.header-contact
+		flex-direction: column
+	.header-contact-right
+		margin: 10px 0
+	.about-us-team-items-item-in
+		bottom: 35%
+		transform: scale(1.2)
+	.about-us-team-items-item-fb
+		bottom: 35%
+		transform: scale(1.2)
+	.about-us-team-items-item-tw
+		bottom: 35%
+		transform: scale(1.2)
+
+@media all and (max-width: 360px)
+	.agenda-btn-item
+		padding: 20px 2px
+	.agenda
+		margin: 200px 0 0 0
+	.speakers .fp-slidesNav.fp-bottom
+		bottom: -100px
+	.soc-wrap
+		right: 10px
+	.sponsors-green-cross3
+		right: 250px
+	.sponsors-green-cross1
+		left: 250px
+	.content-longwave
+		transform: scale(.8) rotate(160deg)
+		bottom: 30px
+		left: -55px
+	.content-white-sircle
+		top: 45%
+		left: -40px
+	.content-green-wave3
+		transform: scale(1.5) rotate(-45deg)
+		right: -30px
+	.content-cross-right
+		right: -40px
+	.content-white-wave
+		left: 75px
+		bottom: 30px
+		transform: scale(1.8)
+	.content-white-wave1
+		transform: scale(1.8)
+		right: 25px
+	.content-white-wave2
+		right: 40px
+		transform: scale(1.8)
+	.content-green-sircle
+		right: -55px
+		bottom: 5px
+		transform: scale(.6)
+//////////*perconal*///////////

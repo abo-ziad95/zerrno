@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="17" height="16" viewBox="0 0 17 16">
+  <defs>
+    <style>
+      .white-croos-cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path d="M16.048,4.195 L12.429,7.831 L15.752,11.170 L11.714,15.228 L8.391,11.889 L5.116,15.179 L1.078,11.121 L4.352,7.831 L0.783,4.244 L4.821,0.187 L8.391,3.773 L12.009,0.137 L16.048,4.195 Z" class="white-croos-cls-1"/>
+</svg>

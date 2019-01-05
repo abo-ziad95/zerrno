@@ -1,0 +1,206 @@
+.modal-wrap {
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: rgba(117, 117, 117, 0.5);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear; }
+  .modal-wrap.show {
+    opacity: 1;
+    visibility: visible; }
+
+.modal {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  max-height: 730px;
+  height: auto; }
+
+.container-modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.modal-img {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff; }
+  .modal-img img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: auto; }
+
+.modal-gallery-photos-item-number {
+  border-radius: 25px;
+  background-color: #b28d8d;
+  width: 100px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  z-index: 10;
+  cursor: default;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px; }
+
+.modal-desc {
+  width: 50%;
+  background-color: #fff;
+  padding: 0px 45px; }
+
+.modal-back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  color: #b18184;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  letter-spacing: .2px; }
+  .modal-back img {
+    displya: inline-block;
+    margin: 0 15px 0 0; }
+
+.modal-num-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 25px 0 29px; }
+
+.modal-desc-price {
+  color: #b18184;
+  letter-spacing: .3px;
+  line-height: 1.2;
+  font-family: "Montserrat-Bold", sans-serif;
+  font-size: 24px;
+  text-align: center;
+  margin: 0 0 31px; }
+
+.modal-desc-title {
+  color: #ffd0a8;
+  text-align: center;
+  line-height: .8;
+  letter-spacing: .5px;
+  font-size: 36px;
+  font-family: "Merriweather-Bold", serif;
+  margin: 0 0 25px; }
+
+.modal-desc-subtitle {
+  color: #3f3f3f;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  line-height: 1.8;
+  text-align: center;
+  letter-spacing: -0.6px;
+  margin: 0 0 30px 0; }
+
+.modal-desc-size {
+  color: #202020;
+  font-family: "Montserrat-Bold", sans-serif;
+  text-align: center;
+  margin: 0 0 45px; }
+
+.modal-inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.modal-input {
+  border: 2px solid #ddd;
+  border-radius: 30px;
+  max-width: 248px;
+  width: 100%;
+  max-height: 59px;
+  height: 100%;
+  padding: 20px 33px;
+  margin: 0 14px 28px 0;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #888888; }
+
+.modalbutton {
+  margin: 40px auto 65px;
+  display: block;
+  background-color: #ffd0a8;
+  color: #fff;
+  max-height: 59px;
+  height: 100%;
+  min-width: 298px;
+  border-radius: 30px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  outline: none;
+  font-size: 18px;
+  padding: 18px 0;
+  border: none;
+  cursor: pointer; }
+
+.modal-arrow {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+  cursor: pointer;
+  z-index: 101; }
+
+.modal-prev-item {
+  top: 50%;
+  left: 150px;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%); }
+
+.modal-next-item {
+  top: 50%;
+  right: 150px;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%); }
